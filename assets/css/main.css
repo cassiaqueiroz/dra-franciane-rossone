@@ -1151,6 +1151,8 @@ section,
 .consulta .features-image {
   position: relative;
   min-height: 400px;
+  height: 100%;
+
 }
 
 .consulta .features-image img {
@@ -1161,6 +1163,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  object-position: 50% 20%; /* Centraliza horizontalmente e alinha ao topo */
 }
 
 .consulta h3 {
