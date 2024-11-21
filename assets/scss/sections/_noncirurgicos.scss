@@ -1,0 +1,123 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Noncirurgicos Section
+--------------------------------------------------------------*/
+.noncirurgicos {
+  --background-color: rgba(68, 68, 68, 0.04);
+
+  .nav-tabs {
+    border: 0;
+  }
+
+  .nav-link {
+    color: var(--heading-color);
+    padding: 15px 0;
+    transition: 0.3s;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    border: 0;
+    border-bottom: 4px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+    i {
+      padding-right: 15px;
+      font-size: 48px;
+    }
+
+    h4 {
+      font-size: 17px;
+      margin: 0;
+
+      @media (max-width: 575px) {
+        font-size: 15px;
+      }
+    }
+
+    &:hover {
+      color: var(--accent-color);
+      border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+    }
+
+    &.active {
+      background-color: transparent;
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+
+  .tab-content {
+    margin-top: 30px;
+  }
+
+  .tab-pane {
+    h3 {
+      color: var(--heading-color);
+      font-weight: 700;
+      font-size: 32px;
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: var(--accent-color);
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      /* Itens lado a lado no padrão */
+      flex-wrap: wrap;
+
+      /* Permitir que quebrem linha, se necessário */
+      li {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: var(--accent-color);
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 575px) {
+      .noncirurgicos .nav.nav-tabs {
+        display: flex;
+        flex-direction: column;
+        /* Empilhar os itens */
+        align-items: stretch;
+        /* Expandir os itens para ocupar toda a largura */
+      }
+
+      .noncirurgicos .nav-item {
+        margin-bottom: 10px;
+        /* Espaçamento entre os itens */
+        width: 100%;
+        /* Certifica-se de que os itens ocupem toda a largura */
+      }
+
+      .noncirurgicos .nav-link {
+        justify-content: center;
+        /* Centralizar o conteúdo dentro do botão */
+      }
+    }
+  }
+}
