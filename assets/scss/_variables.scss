@@ -5,11 +5,28 @@
 --------------------------------------------------------------*/
 
 /* Fonts */
-:root {
-  --default-font: "Mulish",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Noto Serif TC",  sans-serif;
-  --nav-font: "Marcellus",  sans-serif;
+
+/* variables.css */
+
+/* Registrar a fonte personalizada */
+@font-face {
+  font-family: "Roxborough CF";
+  src: url("../fonts/Roxborough-CF/roxborough-cf-regular.eot")
+      format("woff2"),
+    url("../fonts/Roxborough-CF/roxborough-cf-regular.woff")
+      format("woff"),
+      url("../fonts/Roxborough-CF/roxborough-cf-regular.eot");
 }
+
+@import url('https://fonts.cdnfonts.com/css/kiona-2');
+
+/* Declarar as variáveis globais */
+:root {
+  --default-font: "Kiona", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roxborough CF", sans-serif;
+  --nav-font: "Marcellus", sans-serif;
+}
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 

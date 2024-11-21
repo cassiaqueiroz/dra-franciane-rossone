@@ -5,14 +5,29 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+/* Registrar a fonte personalizada */
+@font-face {
+  font-family: "Roxborough CF";
+  src: url("../fonts/Roxborough-CF/roxborough-cf-regular.eot")
+      format("woff2"),
+    url("../fonts/Roxborough-CF/roxborough-cf-regular.woff")
+      format("woff"),
+      url("../fonts/Roxborough-CF/roxborough-cf-regular.eot");
+}
+
+@import url("https://fonts.cdnfonts.com/css/kiona-2");
+
 :root {
-  --default-font: "Mulish",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Noto Serif TC",  sans-serif;
-  --nav-font: "Marcellus",  sans-serif;
+  --default-font: "Kiona", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roxborough CF", sans-serif;
+  --nav-font: "Marcellus", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #444444; /* Color for headings, subheadings and title throughout the website */
@@ -23,7 +38,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
+  --nav-color: #444444; /* The default color of the main navmenu links */
   --nav-hover-color: #bd9c94; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -93,7 +108,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -249,7 +267,6 @@ h6 {
 }
 
 @media (max-width: 575px) {
-
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
     font-size: 13px;
@@ -355,7 +372,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -394,11 +411,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -410,7 +427,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -513,7 +530,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -540,7 +557,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -599,7 +616,8 @@ h6 {
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .credits {
@@ -695,7 +713,8 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -718,11 +737,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title nav ol li+li {
+.page-title nav ol li + li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.page-title nav ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -742,7 +761,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 100px;
@@ -771,13 +789,14 @@ section,
 .section-title span {
   position: absolute;
   top: 4px;
-  color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  color: color-mix(in srgb, var(--heading-color), transparent 93%);
   left: 0;
   right: 0;
   z-index: 1;
   font-weight: 700;
   font-size: 42px;
   line-height: 1;
+  font-family: var(--heading-font);
 }
 
 .section-title p {
@@ -827,15 +846,17 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Garante que a imagem cubra a área do contêiner */
+  object-position: center; /* Alinha a imagem no topo */
   z-index: 1;
 }
 
+/* Ajustando o carrossel para usar background-image */
 .hero .carousel-item {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -845,19 +866,25 @@ section,
   background: color-mix(in srgb, var(--background-color), transparent 40%);
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 2; /* Sobreposição da camada com o fundo escurecido */
 }
 
+/* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 30%
+  );
   position: absolute;
   inset: 0;
+  z-index: 2; /* Garantir que fique acima do fundo */
 }
 
 .hero .carousel-container {
   position: absolute;
-  inset: 90px 64px 64px 64px;
+  inset: 90px 64px 64px 64px; /* Ajuste o valor conforme necessário para sua necessidade */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -889,7 +916,6 @@ section,
 }
 
 @media (min-width: 1024px) {
-
   .hero h2,
   .hero h5,
   .hero h3 {
@@ -934,7 +960,6 @@ section,
 }
 
 @media (min-width: 1024px) {
-
   .hero .carousel-control-prev,
   .hero .carousel-control-next {
     width: 5%;
@@ -966,8 +991,7 @@ section,
   opacity: 1;
 }
 
-@media (max-height: 768px),
-(max-width: 1024px) {
+@media (max-height: 768px), (max-width: 1024px) {
   .hero .carousel-indicators li {
     margin-bottom: 20px;
   }
@@ -981,8 +1005,7 @@ section,
   z-index: 2;
 }
 
-@media (max-height: 768px),
-(max-width: 1024px) {
+@media (max-height: 768px), (max-width: 1024px) {
   .hero .featured {
     margin-top: 0;
   }
@@ -1245,6 +1268,13 @@ section,
   overflow: hidden;
 }
 
+.cirurgias img {
+  display: block; /* Remove o espaço extra ao redor da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 70%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
 .cirurgias .nav-tabs {
   border: 0;
 }
@@ -1255,9 +1285,11 @@ section,
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 600;
   font-size: 15px;
+  font-family: var(--heading-font);
 }
 
 .cirurgias .nav-link:hover {
@@ -1324,7 +1356,8 @@ section,
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 4px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 4px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .noncirurgicos .nav-link i {
@@ -1474,8 +1507,8 @@ section,
   }
 }
 
-.endereco .php-email-form input[type=text],
-.endereco .php-email-form input[type=email],
+.endereco .php-email-form input[type="text"],
+.endereco .php-email-form input[type="email"],
 .endereco .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1486,19 +1519,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.endereco .php-email-form input[type=text]:focus,
-.endereco .php-email-form input[type=email]:focus,
+.endereco .php-email-form input[type="text"]:focus,
+.endereco .php-email-form input[type="email"]:focus,
 .endereco .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.endereco .php-email-form input[type=text]::placeholder,
-.endereco .php-email-form input[type=email]::placeholder,
+.endereco .php-email-form input[type="text"]::placeholder,
+.endereco .php-email-form input[type="email"]::placeholder,
 .endereco .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.endereco .php-email-form button[type=submit] {
+.endereco .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1507,7 +1540,7 @@ section,
   border-radius: 4px;
 }
 
-.endereco .php-email-form button[type=submit]:hover {
+.endereco .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1560,7 +1593,8 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
