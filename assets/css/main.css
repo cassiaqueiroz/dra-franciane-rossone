@@ -8,12 +8,9 @@
 
 /* Registrar a fonte personalizada */
 @font-face {
-  font-family: "Roxborough CF";
-  src: url("../fonts/Roxborough-CF/roxborough-cf-regular.eot")
-      format("woff2"),
-    url("../fonts/Roxborough-CF/roxborough-cf-regular.woff")
-      format("woff"),
-      url("../fonts/Roxborough-CF/roxborough-cf-regular.eot");
+  font-family: "Roxborough CF Thin";
+  src: url("../fonts/roxborough-cf-thin.ttf")
+      format("truetype");
 }
 
 @import url("https://fonts.cdnfonts.com/css/kiona-2");
@@ -22,7 +19,7 @@
   --default-font: "Kiona", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Roxborough CF", sans-serif;
+  --heading-font: "Roxborough CF Thin", sans-serif;
   --nav-font: "Marcellus", sans-serif;
 }
 
@@ -261,7 +258,7 @@ h6 {
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .php-email-form .sent-message {
@@ -271,7 +268,7 @@ h6 {
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .php-email-form .loading {
@@ -315,7 +312,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: rgba(212, 175, 55, 0.85);
+  background-color: #b7b8ba;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -378,7 +375,7 @@ h6 {
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--heading-color);
 }
 
@@ -642,7 +639,7 @@ h6 {
 
 .footer h3 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -749,7 +746,7 @@ h6 {
   font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
-  font-weight: 700;
+  font-weight: 500;
   transform: scaleX(1.1); /* Aumenta a largura do ícone */
 }
 
@@ -789,7 +786,7 @@ h6 {
 
 .page-title .heading h1 {
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .page-title nav {
@@ -849,7 +846,7 @@ section,
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 0;
   position: relative;
@@ -863,7 +860,7 @@ section,
   left: 0;
   right: 0;
   z-index: 1;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 42px;
   line-height: 1;
   font-family: var(--heading-font);
@@ -977,7 +974,7 @@ section,
 
 .hero .carousel-item h2 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   animation: fadeInDown 1s both;
 }
 
@@ -1124,7 +1121,7 @@ section,
 
 .hero .featured-item h3,
 .hero .featured-item h5 {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -1185,7 +1182,7 @@ section,
 --------------------------------------------------------------*/
 .sobre .content h3 {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .sobre .content ul {
@@ -1238,7 +1235,7 @@ section,
 
 .consulta h3 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -1281,7 +1278,7 @@ section,
 }
 
 .consulta .icon-box h4 {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 10px;
   font-size: 18px;
 }
@@ -1318,7 +1315,7 @@ section,
 
 .clinica h3 {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--contrast-color);
 
 }
@@ -1372,7 +1369,7 @@ section,
   border-radius: 0;
   border-right: 2px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   font-family: var(--heading-font);
 }
@@ -1393,7 +1390,7 @@ section,
 
 .cirurgias .details h3 {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -1478,7 +1475,7 @@ section,
 
 .noncirurgicos .tab-pane h3 {
   color: var(--heading-color);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 32px;
   position: relative;
   margin-bottom: 20px;
@@ -1566,10 +1563,9 @@ section,
 }
 
 .endereco .info-item h3 {
-  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 10px 0;
 }
 
@@ -1654,7 +1650,7 @@ section,
 .contatos .info-item h3 {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 10px 0;
 }
 
@@ -1687,7 +1683,7 @@ section,
 
 .service-details .services-list a.active {
   color: var(--heading-color);
-  font-weight: 700;
+  font-weight: 500;
   border-color: var(--accent-color);
 }
 
@@ -1701,12 +1697,12 @@ section,
 
 .service-details h3 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .service-details h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .service-details p {
