@@ -1385,7 +1385,7 @@ section,
   border-right: 2px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   font-family: var(--heading-font);
 }
 
