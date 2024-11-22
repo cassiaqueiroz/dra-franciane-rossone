@@ -153,10 +153,13 @@ a:hover {
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
   font-weight: 600;
+}
+
+p {
+  color: var(--default-color);
 }
 
 a {
@@ -1673,6 +1676,7 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color: var(--default-color);
 }
 
 /*--------------------------------------------------------------
