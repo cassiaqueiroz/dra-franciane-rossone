@@ -155,7 +155,7 @@ a:hover {
 body {
   background-color: var(--background-color);
   font-family: var(--default-font);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--default-color);
 }
 
