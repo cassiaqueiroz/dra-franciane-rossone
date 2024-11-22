@@ -877,7 +877,7 @@ section,
 .section-title span {
   position: absolute;
   top: 4px;
-  color: color-mix(in srgb, var(--heading-color), transparent 93%);
+  color: color-mix(in srgb, var(--heading-color), transparent 83%);
   left: 0;
   right: 0;
   z-index: 1;
