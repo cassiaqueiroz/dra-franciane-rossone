@@ -34,16 +34,16 @@
   --accent-color: #D4AF37; /* Dourado sofisticado para chamar atenção */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone: #B5B1A9; /* Cinza refinado para bordas e áreas neutras */
+  --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
   --button-background: #D4AF37; /* Fundo dourado para botões */
-  --button-hover-background: #B5B1A9; /* Fundo cinza no hover */
+  --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
   --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color: #B5B1A9; /* Borda cinza para botões refinados */
+  --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
 
   /* Bordas */
-  --border-color: #B5B1A9; /* Cor das bordas para inputs e seções */
+  --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
   --border-hover-color: #D4AF37; /* Borda dourada ao interagir */
 
   /* Navegação */
@@ -633,7 +633,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #B5B1A9;
+  background-color: #b7b8ba;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -664,7 +664,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #B5B1A9;
+  color: #b7b8ba;
   line-height: 1;
   margin: 0 5px;
   border-radius: 40px;
@@ -1308,7 +1308,7 @@ section,
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: #B5B1A9;
+  background-color: #b7b8ba;
 }
 
 .clinica .container {
