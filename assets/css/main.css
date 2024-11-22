@@ -9,46 +9,51 @@
 /* Registrar a fonte personalizada */
 @font-face {
   font-family: "Roxborough CF Thin";
-  src: url("../fonts/roxborough-cf-thin.ttf")
-      format("truetype");
+  src: url("../fonts/roxborough-cf-thin.ttf") format("truetype");
 }
 
-@import url('https://fonts.cdnfonts.com/css/bw-vivant');
-@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+@font-face {
+  font-family: "Source Sans Pro Light";
+  src: url("../fonts/source-sans-pro.light.ttf") format("truetype");
+}
 
 :root {
-  --default-font: "Source Sans Pro";
+  --default-font: "Source Sans Pro Light", sans-serif;
   --heading-font: "Roxborough CF Thin", sans-serif;
   --nav-font: "Bw Vivant", sans-serif;
 }
-
 :root {
   /* Paleta Global */
   --background-color: #ffffff; /* Branco puro para o fundo principal */
   --default-color: #444444; /* Cinza escuro para o texto */
   --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #D4AF37; /* Dourado sofisticado para chamar atenção */
+  --accent-color: #d4af37; /* Dourado sofisticado para chamar atenção */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
   --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
-  --button-background: #D4AF37; /* Fundo dourado para botões */
+  --button-background: #d4af37; /* Fundo dourado para botões */
   --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
   --button-text-color: #ffffff; /* Texto branco nos botões */
   --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
 
   /* Bordas */
   --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
-  --border-hover-color: #D4AF37; /* Borda dourada ao interagir */
+  --border-hover-color: #d4af37; /* Borda dourada ao interagir */
 
   /* Navegação */
   --nav-color: #444444; /* Cor padrão dos links do menu */
-  --nav-hover-color: #D4AF37; /* Dourado ao passar o mouse */
+  --nav-hover-color: #d4af37; /* Dourado ao passar o mouse */
   --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
-  --nav-dropdown-background-color: rgba(255, 255, 255, 0.4); /* Fundo do dropdown */
+  --nav-dropdown-background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Fundo do dropdown */
   --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
-  --nav-dropdown-hover-color: #D4AF37; /* Dourado nos links ao passar o mouse */
+  --nav-dropdown-hover-color: #d4af37; /* Dourado nos links ao passar o mouse */
 }
 
 /* Botões */
@@ -64,13 +69,19 @@ button {
 }
 
 button:hover {
-  background-color: color-mix(in srgb, var(--button-background), transparent 90%);
+  background-color: color-mix(
+    in srgb,
+    var(--button-background),
+    transparent 90%
+  );
   color: var(--default-color);
   border-color: var(--border-hover-color);
 }
 
 /* Inputs e áreas destacadas */
-input, textarea, select {
+input,
+textarea,
+select {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   color: var(--default-color);
@@ -79,7 +90,9 @@ input, textarea, select {
   transition: border-color 0.3s ease;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   border-color: var(--border-hover-color);
   outline: none;
 }
@@ -125,7 +138,7 @@ a:hover {
 }
 
 .accent-background {
-  --background-color: #D4AF37;
+  --background-color: #d4af37;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #d0b9b4;
@@ -143,7 +156,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  font-weight: 300;
+  font-weight: 600;
 }
 
 a {
@@ -911,7 +924,7 @@ section,
   }
 }
 
-.top-aligned{
+.top-aligned {
   position: absolute;
   inset: 0;
   display: block;
@@ -922,7 +935,7 @@ section,
   z-index: 1;
 }
 
-.center-aligned{
+.center-aligned {
   position: absolute;
   inset: 0;
   display: block;
@@ -1223,7 +1236,6 @@ section,
   position: relative;
   min-height: 400px;
   height: 100%;
-
 }
 
 .consulta .features-image img {
@@ -1321,7 +1333,6 @@ section,
   font-size: 28px;
   font-weight: 500;
   color: var(--contrast-color);
-
 }
 
 .clinica p {
@@ -1343,7 +1354,7 @@ section,
 }
 
 .clinica .cta-btn:hover {
-  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%); 
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%);
   border: 2px solid var(--constrast-color);
 }
 
