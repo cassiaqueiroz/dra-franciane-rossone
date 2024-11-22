@@ -684,7 +684,7 @@ h6 {
 .footer .copyright {
   padding-top: 25px;
   border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+    color-mix(in srgb, var(--default-color), transparent 78%);
 }
 
 .footer .credits {
