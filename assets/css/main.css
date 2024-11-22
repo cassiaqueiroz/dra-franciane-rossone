@@ -26,24 +26,91 @@
   --nav-font: "Marcellus", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #444444; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #bd9c94; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  /* Paleta Global */
+  --background-color: #ffffff; /* Branco puro para o fundo principal */
+  --default-color: #444444; /* Cinza escuro para o texto */
+  --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
+  --accent-color: #D4AF37; /* Dourado sofisticado para chamar atenção */
+  --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
+  --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
+  --gray-tone: #B5B1A9; /* Cinza refinado para bordas e áreas neutras */
+
+  /* Botões */
+  --button-background: #D4AF37; /* Fundo dourado para botões */
+  --button-hover-background: #B5B1A9; /* Fundo cinza no hover */
+  --button-text-color: #ffffff; /* Texto branco nos botões */
+  --button-border-color: #B5B1A9; /* Borda cinza para botões refinados */
+
+  /* Bordas */
+  --border-color: #B5B1A9; /* Cor das bordas para inputs e seções */
+  --border-hover-color: #D4AF37; /* Borda dourada ao interagir */
+
+  /* Navegação */
+  --nav-color: #444444; /* Cor padrão dos links do menu */
+  --nav-hover-color: #D4AF37; /* Dourado ao passar o mouse */
+  --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
+  --nav-dropdown-background-color: rgba(255, 255, 255, 0.4); /* Fundo do dropdown */
+  --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
+  --nav-dropdown-hover-color: #D4AF37; /* Dourado nos links ao passar o mouse */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #444444; /* The default color of the main navmenu links */
-  --nav-hover-color: #bd9c94; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #bd9c94; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+/* Botões */
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: 2px solid var(--button-border-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-background);
+  color: var(--default-color);
+  border-color: var(--border-hover-color);
+}
+
+/* Inputs e áreas destacadas */
+input, textarea, select {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--default-color);
+  padding: 10px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--border-hover-color);
+  outline: none;
+}
+
+/* Cartões e áreas de destaque */
+.card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border-color: var(--border-hover-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Links */
+a {
+  color: var(--default-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -62,7 +129,7 @@
 }
 
 .accent-background {
-  --background-color: #bd9c94;
+  --background-color: #D4AF37;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #d0b9b4;
@@ -248,7 +315,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #bd9c94;
+  background-color: rgba(212, 175, 55, 0.85);
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -284,7 +351,7 @@ h6 {
 }
 
 .header .topbar .social-links a {
-  color: color-mix(in srgb, var(--contrast-color), transparent 40%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 45%);
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
@@ -520,9 +587,8 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
+    background-color: rgba (255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease-in-out;
   }
 
@@ -567,7 +633,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #B5B1A9;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -594,24 +660,26 @@ h6 {
 }
 
 .footer .social-links a {
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  color: #B5B1A9;
   line-height: 1;
-  margin: 0 4px;
-  border-radius: 50%;
+  margin: 0 5px;
+  border-radius: 40px;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   transition: 0.3s;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 10%);
 }
 
 .footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: rgb(212, 175, 55);
   text-decoration: none;
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 10%);
 }
 
 .footer .copyright {
@@ -675,17 +743,20 @@ h6 {
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
+  font-weight: 700;
+  transform: scaleX(1.1); /* Aumenta a largura do ícone */
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .scroll-top.active {
@@ -1238,6 +1309,7 @@ section,
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
+  background-color: #B5B1A9;
 }
 
 .clinica .container {
@@ -1248,11 +1320,12 @@ section,
 .clinica h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--default-color);
+  color: var(--contrast-color);
+
 }
 
 .clinica p {
-  color: var(--default-color);
+  color: var(--contrast-color);
 }
 
 .clinica .cta-btn {
@@ -1262,17 +1335,17 @@ section,
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 40px;
   transition: 0.3s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  background: var(--contrast-color);
+  color: var(--constrast-color);
+  border-radius: 5px;
 }
 
 .clinica .cta-btn:hover {
   background: var(--contrast-color);
   color: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--constrast-color);
 }
 
 /*--------------------------------------------------------------
