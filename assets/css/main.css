@@ -13,10 +13,11 @@
       format("truetype");
 }
 
-@import url("https://fonts.cdnfonts.com/css/kiona-2");
+@import url('https://fonts.cdnfonts.com/css/bw-vivant');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 :root {
-  --default-font: "Kiona";
+  --default-font: "Source Sans Pro";
   --heading-font: "Roxborough CF Thin", sans-serif;
   --nav-font: "Bw Vivant", sans-serif;
 }
@@ -142,6 +143,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-weight: 300;
 }
 
 a {
@@ -165,6 +167,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.subtitulo {
+  font-family: var(--nav-font);
+  font-weight: 200;
+}
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -185,8 +192,8 @@ h6 {
   position: absolute;
   width: 120px;
   height: 120px;
-  animation-delay: 0s;
   animation: pulsate-play-btn 2s;
+  animation-delay: 0s;
   animation-direction: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: steps;
@@ -645,7 +652,6 @@ h6 {
 
 .footer p {
   font-size: 20px;
-  font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
 }
