@@ -677,9 +677,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: rgb(212, 175, 55);
   text-decoration: none;
-  background-color: color-mix(in srgb, var(--contrast-color), transparent 10%);
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%);
 }
 
 .footer .copyright {
