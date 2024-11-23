@@ -961,13 +961,6 @@ section,
   overflow: hidden;
 }
 
-.hero .carousel-item:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2; /* Sobreposição da camada com o fundo escurecido */
-}
 
 /* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
@@ -975,7 +968,7 @@ section,
   background-color: color-mix(
     in srgb,
     var(--background-color),
-    transparent 30%
+    transparent 45%
   );
   position: absolute;
   inset: 0;
