@@ -8,8 +8,9 @@
 
 /* Registrar a fonte personalizada */
 @font-face {
-  font-family: "Roxborough CF Thin";
-  src: url("../fonts/roxborough-cf-thin.ttf") format("truetype");
+  font-family: "Wild and Folk Regular";
+  src: url("../fonts/Wild-and-Folk.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +28,7 @@
   --heading-font: "Kiona Regular", sans-serif;
   --nav-font: "Kiona Regular", sans-serif;
 }
+
 :root {
   /* Paleta Global */
   --background-color: #ffffff; /* Branco puro para o fundo principal */
@@ -355,7 +357,8 @@ h6 {
 }
 
 .header .topbar .contact-info a:hover {
- border-bottom: 1px solid color-mix(in srgb, var(--contrast-color), transparent 45%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--contrast-color), transparent 45%);
 }
 
 .header .topbar .contact-info i a,
@@ -677,6 +680,11 @@ h6 {
   position: relative;
 }
 
+.footer .doctor-name {
+  font-family: "Wild and Folk Regular", sans-serif;
+}
+
+
 .footer h3 {
   font-size: 24px;
   font-weight: 500;
@@ -928,6 +936,10 @@ section,
   padding: 0;
 }
 
+.hero .doctor-name {
+  font-family: "Wild and Folk Regular", sans-serif;
+}
+
 .hero .carousel {
   width: 100%;
   height: 100vh;
@@ -976,7 +988,6 @@ section,
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
 
 /* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
@@ -1568,13 +1579,12 @@ section,
     /* Centralizar o conteúdo dentro do botão */
   }
 
-  .noncirurgicos .tab-pane img{
+  .noncirurgicos .tab-pane img {
     width: 100%;
     height: 65vh;
     object-fit: cover;
     object-position: top;
   }
-
 }
 
 /*--------------------------------------------------------------
