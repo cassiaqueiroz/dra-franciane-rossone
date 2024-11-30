@@ -692,14 +692,14 @@ h6 {
 }
 
 .footer h1 {
-  font-size: 30px;
+  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
 }
 
 .footer h3 {
-  font-size: 20px;
+  font-size: 1.15em; /* 38px ÷ 16 = 2.375rem */
   font-weight: 200;
   color: #fff;
   position: relative;
