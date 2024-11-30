@@ -23,10 +23,12 @@
   src: url("../fonts/Kiona-Regular.ttf") format("truetype");
 }
 
+@import url("https://fonts.cdnfonts.com/css/bw-vivant");
+
 :root {
   --default-font: "Source Sans Pro Light", sans-serif;
-  --heading-font: "Kiona Regular", sans-serif;
-  --nav-font: "Kiona Regular", sans-serif;
+  --heading-font: "Bw Vivant", sans-serif;
+  --nav-font: "Bw Vivant", sans-serif;
 }
 
 :root {
@@ -34,7 +36,7 @@
   --background-color: #ffffff; /* Branco puro para o fundo principal */
   --default-color: #444444; /* Cinza escuro para o texto */
   --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #b29130; /* Dourado sofisticado para chamar atenção */
+  --accent-color: #d1ad71; /* Dourado sofisticado */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
   --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
@@ -189,11 +191,14 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  font-weight: 200;
 }
 
 .subtitulo {
-  font-family: var(--heading-font);
+  font-family: "Kiona Regular", sans-serif;
   font-weight: 200;
+  color: #e5d4d3;
+  letter-spacing: 10px; /* ou mantenha proporcional como "0.736em" */
 }
 
 /* Pulsating Play Button
@@ -287,7 +292,7 @@ h6 {
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .php-email-form .sent-message {
@@ -297,7 +302,7 @@ h6 {
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .php-email-form .loading {
@@ -345,7 +350,7 @@ h6 {
   height: 40px;
   padding: 0;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 200;
   transition: all 0.5s;
 }
 
@@ -411,7 +416,7 @@ h6 {
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 200;
   color: var(--heading-color);
 }
 
@@ -452,7 +457,7 @@ h6 {
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 300;
+    font-weight: 200;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -672,7 +677,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: fff;
   background-color: #b7b8ba;
   font-size: 14px;
   text-align: center;
@@ -681,13 +686,22 @@ h6 {
 }
 
 .footer .doctor-name {
+  color: #fff;
   font-family: "Wild and Folk Regular", sans-serif;
+  letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
 }
 
+.footer h1 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s both;
+}
 
 .footer h3 {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -708,7 +722,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
@@ -717,7 +731,7 @@ h6 {
   height: 35px;
   transition: 0.3s;
   text-decoration: none;
-  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
+  border: 1px solid #fff;
 }
 
 .footer .social-links a:hover {
@@ -727,13 +741,14 @@ h6 {
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 78%);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -793,7 +808,7 @@ h6 {
   font-size: 24px;
   color: var(--contrast-color);
   line-height: 0;
-  font-weight: 500;
+  font-weight: 200;
   transform: scaleX(1.1); /* Aumenta a largura do ícone */
 }
 
@@ -892,7 +907,7 @@ section,
 
 .section-title h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 200;
   margin-bottom: 20px;
   padding-bottom: 0;
   position: relative;
@@ -906,10 +921,10 @@ section,
   left: 0;
   right: 0;
   z-index: 1;
-  font-weight: 500;
   font-size: 42px;
   line-height: 1;
   font-family: var(--heading-font);
+  font-weight: 200;
 }
 
 .section-title p {
@@ -937,7 +952,9 @@ section,
 }
 
 .hero .doctor-name {
+  color: #bbbbbb;
   font-family: "Wild and Folk Regular", sans-serif;
+  letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
 }
 
 .hero .carousel {
@@ -992,11 +1009,7 @@ section,
 /* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 45%
-  );
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
   z-index: 2; /* Garantir que fique acima do fundo */
@@ -1013,20 +1026,28 @@ section,
   z-index: 3;
   padding-bottom: 50px; /* Ajuste o espaço na parte inferior */
 }
-
-.hero .carousel-item h2 {
-  font-size: 48px;
-  font-weight: 500;
+.hero .carousel-item h1 {
+  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
+  font-weight: 200;
+  margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
 }
 
+.hero .carousel-item h2 {
+  font-size: 2rem; /* 48px ÷ 16 = 3rem */
+  font-weight: 200;
+  animation: fadeInDown 1s both;
+  color: #bbb;
+
+}
+
 .hero .carousel-item h2 span {
-  color: var(--accent-color);
+  color: #bbb;
 }
 
 @media (max-width: 768px) {
   .hero .carousel-item h2 {
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px ÷ 16 = 1.875rem */
   }
 }
 
@@ -1035,10 +1056,18 @@ section,
   animation: fadeInDown 1s both 0.2s;
 }
 
+.hero h3 {
+  font-size: 1.15em; /* 38px ÷ 16 = 2.375rem */
+  font-weight: 500;
+  text-align: center;
+  padding: 0;
+}
+
+
 @media (min-width: 1024px) {
   .hero h2,
-  .hero h5,
-  .hero h3 {
+  .hero h5
+   {
     max-width: 48%;
   }
 }
@@ -1047,7 +1076,7 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 200;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1089,7 +1118,7 @@ section,
 .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
   background: none;
-  color: var(--default-color);
+  color: #bbb;
   font-size: 48px;
   line-height: 1;
 }
@@ -1155,19 +1184,6 @@ section,
   margin-bottom: 10px;
 }
 
-.hero .featured-item .icon i {
-  color: var(--accent-color);
-  font-size: 36px;
-  transition: ease-in-out 0.3s;
-}
-
-.hero .featured-item h3,
-.hero .featured-item h5 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
 .hero .featured-item h3 a,
 .hero .featured-item h5 a {
   color: var(--heading-color);
@@ -1224,7 +1240,7 @@ section,
 --------------------------------------------------------------*/
 .sobre .content h3 {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .sobre .content ul {
@@ -1254,6 +1270,26 @@ section,
   top: calc(50% - 47px);
 }
 
+/* Destacar a última frase */
+.highlight {
+  color: #2c3e50; /* Azul profundo ou cinza escuro */
+  background-color: #f9f9f9; /* Fundo neutro */
+  font-weight: 200;
+  padding: 10px 15px;
+  border-left: 4px solid #d1ad71; /* Barra dourada para um toque sofisticado */
+  margin: 24px 0;
+  border-radius: 4px; /* Bordas arredondadas */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  font-size: 1.1em; /* Aumentar levemente o texto */
+  font-family: var(--heading-font);
+}
+
+/* Para ajustar o espaçamento em torno do <ul> */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 /*--------------------------------------------------------------
 # Consulta Section
 --------------------------------------------------------------*/
@@ -1276,7 +1312,7 @@ section,
 
 .consulta h3 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 200;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -1319,7 +1355,7 @@ section,
 }
 
 .consulta .icon-box h4 {
-  font-weight: 500;
+  font-weight: 200;
   margin-bottom: 10px;
   font-size: 18px;
 }
@@ -1356,7 +1392,7 @@ section,
 
 .clinica h3 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 200;
   color: var(--contrast-color);
 }
 
@@ -1366,7 +1402,7 @@ section,
 
 .clinica .cta-btn {
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: 200;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1409,7 +1445,7 @@ section,
   border-radius: 0;
   border-right: 2px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
-  font-weight: 500;
+  font-weight: 200;
   font-size: 17px;
   font-family: var(--heading-font);
 }
@@ -1430,7 +1466,7 @@ section,
 
 .cirurgias .details h3 {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 200;
   margin-bottom: 20px;
 }
 
@@ -1515,7 +1551,7 @@ section,
 
 .noncirurgicos .tab-pane h3 {
   color: var(--heading-color);
-  font-weight: 500;
+  font-weight: 200;
   font-size: 26px;
   position: relative;
   margin-bottom: 20px;
@@ -1612,7 +1648,7 @@ section,
 .endereco .info-item h3 {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 200;
   margin: 10px 0;
 }
 
@@ -1697,7 +1733,7 @@ section,
 .contatos .info-item h3 {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 200;
   margin: 10px 0;
 }
 
@@ -1731,7 +1767,7 @@ section,
 
 .service-details .services-list a.active {
   color: var(--heading-color);
-  font-weight: 500;
+  font-weight: 200;
   border-color: var(--accent-color);
 }
 
@@ -1745,12 +1781,12 @@ section,
 
 .service-details h3 {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .service-details h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .service-details p {
