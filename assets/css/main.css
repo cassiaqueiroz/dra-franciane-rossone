@@ -1009,7 +1009,7 @@ section,
 /* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
   z-index: 2; /* Garantir que fique acima do fundo */
