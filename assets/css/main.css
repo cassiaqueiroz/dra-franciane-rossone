@@ -56,12 +56,12 @@
   /* Navegação */
   --nav-color: #e0e0e0; /* Texto claro no menu */
   --nav-hover-color: #b89e7a; /* Dourado no hover */
-  --nav-mobile-background-color: #2a2a2a; /* Fundo do menu mobile */
+  --nav-mobile-background-color: #1a1a1a; /* Fundo do menu mobile */
   --nav-dropdown-background-color: rgba(
     26,
     26,
     26,
-    0.95
+    1
   ); /* Fundo semitransparente para dropdown */
   --nav-dropdown-color: #e0e0e0; /* Texto claro no dropdown */
   --nav-dropdown-hover-color: #b89e7a; /* Dourado no hover */
@@ -516,6 +516,7 @@ h6 {
     padding: 10px 0;
     background: var(--nav-dropdown-background-color);
     display: block;
+    border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
     position: absolute;
     visibility: hidden;
     left: 14px;
@@ -524,7 +525,7 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
   }
 
   .navmenu .dropdown ul li {
@@ -591,11 +592,13 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: var(--nav-mobile-background-color);
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
     overflow-y: auto;
     transition: 0.3s;
+    border-radius: 4px;
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
   }
 
   .navmenu li {
