@@ -686,7 +686,7 @@ h6 {
 }
 
 .footer h1 {
-  font-size: 1.5em; /* 48px ÷ 16 = 3rem */
+  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
@@ -700,8 +700,8 @@ h6 {
   font-weight: 500;
   text-align: center;
   padding: 0;
+  margin-bottom: 1.5rem;
   color: white;
-  letter-spacing: 4px;
 }
 
 .footer p {
