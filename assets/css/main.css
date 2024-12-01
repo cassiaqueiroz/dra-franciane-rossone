@@ -1076,7 +1076,7 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1273,7 +1273,6 @@ section,
 /* Destacar a última frase */
 .highlight {
   color: #2c3e50; /* Azul profundo ou cinza escuro */
-  background-color: #f9f9f9; /* Fundo neutro */
   font-weight: 200;
   padding: 10px 15px;
   border-left: 4px solid #d1ad71; /* Barra dourada para um toque sofisticado */
