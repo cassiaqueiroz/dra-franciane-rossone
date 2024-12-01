@@ -39,24 +39,24 @@
   --background-color: #ffffff; /* Branco puro para o fundo principal */
   --default-color: #444444; /* Cinza escuro para o texto */
   --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #e6dac7; /* Dourado sofisticado */
+  --accent-color: #B89E7A; /* Dourado sofisticado */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
+  --gray-tone: #E3E0DD; /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
-  --button-background: #d4af37; /* Fundo dourado para botões */
-  --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
+  --button-background: #B89E7A; /* Fundo dourado para botões */
+  --button-hover-background: #E3E0DD; /* Fundo cinza no hover */
   --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
+  --button-border-color: #E3E0DD; /* Borda cinza para botões refinados */
 
   /* Bordas */
-  --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
-  --border-hover-color: #d4af37; /* Borda dourada ao interagir */
+  --border-color: #E3E0DD; /* Cor das bordas para inputs e seções */
+  --border-hover-color: #B89E7A; /* Borda dourada ao interagir */
 
   /* Navegação */
   --nav-color: #444444; /* Cor padrão dos links do menu */
-  --nav-hover-color: #d4af37; /* Dourado ao passar o mouse */
+  --nav-hover-color: #B89E7A; /* Dourado ao passar o mouse */
   --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
   --nav-dropdown-background-color: rgba(
     255,
@@ -65,7 +65,7 @@
     0.73
   ); /* Fundo do dropdown */
   --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
-  --nav-dropdown-hover-color: #d4af37; /* Dourado nos links ao passar o mouse */
+  --nav-dropdown-hover-color: #B89E7A; /* Dourado nos links ao passar o mouse */
 }
 
 /* Botões */
@@ -349,7 +349,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #b7b8ba;
+  background-color: #E3E0DD;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -360,7 +360,7 @@ h6 {
 .header .topbar .contact-info i,
 .header .topbar .contact-info a {
   font-style: normal;
-  color: var(--contrast-color);
+  color: #333;
   border: none;
 }
 
@@ -392,14 +392,14 @@ h6 {
 }
 
 .header .topbar .social-links a {
-  color: color-mix(in srgb, var(--contrast-color), transparent 45%);
+  color: #666;
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
 }
 
 .header .topbar .social-links a:hover {
-  color: var(--contrast-color);
+  color: #888;
 }
 
 .header .branding {
@@ -458,7 +458,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 19px;
     font-family: var(--nav-font);
     font-weight: 200;
     display: flex;
@@ -582,7 +582,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
     border-radius: 0px;
     display: flex;
@@ -680,16 +680,16 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: fff;
-  background-color: #b7b8ba;
+  color: #222;
+  background-color: #E3E0DD;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0;
   position: relative;
 }
 
 .footer .doctor-name {
-  color: #fff;
+  color: #666;
   font-family: "Wild and Folk Regular", sans-serif;
   letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
 }
@@ -704,7 +704,7 @@ h6 {
 .footer h3 {
   font-size: 1em; /* 38px ÷ 16 = 2.375rem */
   font-weight: 200;
-  color: #fff;
+  color: #444;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -721,11 +721,11 @@ h6 {
 }
 
 .footer .social-links a {
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: rgba(2, 2, 2, 0.4);
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
@@ -734,24 +734,24 @@ h6 {
   height: 35px;
   transition: 0.3s;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid rgba(2, 2, 2, 0.4);
 }
 
 .footer .social-links a:hover {
   text-decoration: none;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
+  border-top: 1px solid rgba(2, 2, 2, 0.2);
+  color: #444;
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
-  color: #fff;
+  color: #444;
 }
 
 /*--------------------------------------------------------------
@@ -809,7 +809,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--heading-color);
+  color: var(--contrast-color);
   line-height: 0;
   font-weight: 200;
   transform: scaleX(1.1); /* Aumenta a largura do ícone */
@@ -1076,7 +1076,7 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 300;
@@ -1278,7 +1278,7 @@ section,
   color: #2c3e50; /* Azul profundo ou cinza escuro */
   font-weight: 200;
   padding: 10px 15px;
-  border-left: 4px solid #e6dac7; /* Barra dourada para um toque sofisticado */
+  border-left: 4px solid #B89E7A; /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
   border-radius: 4px; /* Bordas arredondadas */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -1384,7 +1384,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: #b7b8ba;
+  background-color: #E3E0DD;
 }
 
 .clinica .container {
@@ -1395,11 +1395,11 @@ ul {
 .clinica h3 {
   font-size: 28px;
   font-weight: 200;
-  color: var(--contrast-color);
+  color: #333;
 }
 
 .clinica p {
-  color: var(--contrast-color);
+  color: #333;
 }
 
 .clinica .cta-btn {
@@ -1482,7 +1482,7 @@ ul {
   margin-bottom: 0;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .cirurgias .nav-link {
     border: 0;
     padding: 15px;
@@ -1492,7 +1492,7 @@ ul {
     color: var(--heading-color);
     background: var(--accent-color);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Noncirurgicos Section
@@ -1516,7 +1516,7 @@ ul {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 4px solid
+  border-bottom: 2px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
