@@ -25,13 +25,12 @@
 
 @import url("https://fonts.cdnfonts.com/css/bw-vivant");
 
-@import url('https://fonts.cdnfonts.com/css/oregon-ldo');
-
+@import url("https://fonts.cdnfonts.com/css/oregon-ldo");
 
 :root {
   --default-font: "Source Sans Pro Light", sans-serif;
   --heading-font: "Bw Vivant", sans-serif;
-  --nav-font: "Oregon LDO Book", sans-serif;
+  --nav-font: "Bw Vivant", sans-serif;
 }
 
 :root {
@@ -39,24 +38,24 @@
   --background-color: #ffffff; /* Branco puro para o fundo principal */
   --default-color: #444444; /* Cinza escuro para o texto */
   --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #B89E7A; /* Dourado sofisticado */
+  --accent-color: #b89e7a; /* Dourado sofisticado */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone:  rgba(181,177,169, 0.4); /* Cinza refinado para bordas e áreas neutras */
+  --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
-  --button-background: #B89E7A; /* Fundo dourado para botões */
-  --button-hover-background:  rgba(181,177,169, 0.4); /* Fundo cinza no hover */
+  --button-background: #b89e7a; /* Fundo dourado para botões */
+  --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
   --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color:  rgba(181,177,169, 0.4); /* Borda cinza para botões refinados */
+  --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
 
   /* Bordas */
-  --border-color:  rgba(181,177,169, 0.4); /* Cor das bordas para inputs e seções */
-  --border-hover-color: #B89E7A; /* Borda dourada ao interagir */
+  --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
+  --border-hover-color: #b89e7a; /* Borda dourada ao interagir */
 
   /* Navegação */
   --nav-color: #444444; /* Cor padrão dos links do menu */
-  --nav-hover-color: #B89E7A; /* Dourado ao passar o mouse */
+  --nav-hover-color: #b89e7a; /* Dourado ao passar o mouse */
   --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
   --nav-dropdown-background-color: rgba(
     255,
@@ -65,7 +64,7 @@
     0.73
   ); /* Fundo do dropdown */
   --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
-  --nav-dropdown-hover-color: #B89E7A; /* Dourado nos links ao passar o mouse */
+  --nav-dropdown-hover-color: #b89e7a; /* Dourado nos links ao passar o mouse */
 }
 
 /* Botões */
@@ -349,7 +348,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color:  rgba(181,177,169, 0.4);
+  background-color: #b7b8ba;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -360,13 +359,12 @@ h6 {
 .header .topbar .contact-info i,
 .header .topbar .contact-info a {
   font-style: normal;
-  color: #333;
+  color: white;
   border-bottom: 1px solid transparent;
 }
 
 .header .topbar .contact-info a:hover {
-  border-bottom: 1px solid
-    rgba(3,3,3,0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .header .topbar .contact-info i a,
@@ -392,14 +390,14 @@ h6 {
 }
 
 .header .topbar .social-links a {
-  color: #666;
+  color: white;
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
 }
 
 .header .topbar .social-links a:hover {
-  color: #888;
+  color: rgba(255,255,255,0.5);
 }
 
 .header .branding {
@@ -458,7 +456,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 19px;
+    font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 200;
     display: flex;
@@ -508,7 +506,7 @@ h6 {
 
   .navmenu .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
@@ -582,7 +580,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 0px;
     display: flex;
@@ -680,18 +678,12 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: #222;
-  background-color:  rgba(181,177,169, 0.4);
+  color: var(--default-color);
+  background-color: #b7b8ba;
   font-size: 14px;
   text-align: center;
-  padding: 40px 0;
+  padding: 30px 0;
   position: relative;
-}
-
-.footer .doctor-name {
-  color: #666;
-  font-family: "Wild and Folk Regular", sans-serif;
-  letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
 }
 
 .footer h1 {
@@ -699,19 +691,21 @@ h6 {
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
+  font-family: "Wild and Folk Regular", sans-serif;
 }
 
 .footer h3 {
   font-size: 1em; /* 38px ÷ 16 = 2.375rem */
-  font-weight: 200;
-  color: #444;
-  position: relative;
+  font-weight: 500;
+  text-align: center;
   padding: 0;
-  margin: 0 0 15px 0;
+  color: white;
+  letter-spacing: 4px;
 }
 
 .footer p {
-  font-size: 18px;
+  font-size: 20px;
+  font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
 }
@@ -725,33 +719,32 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(2, 2, 2, 0.4);
+  color: rgba(255,255,255,0.8);
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   transition: 0.3s;
   text-decoration: none;
-  border: 1px solid rgba(2, 2, 2, 0.4);
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
 }
 
 .footer .social-links a:hover {
   text-decoration: none;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid rgba(2, 2, 2, 0.2);
-  color: #444;
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 78%);
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
-  color: #444;
 }
 
 /*--------------------------------------------------------------
@@ -1041,7 +1034,6 @@ section,
   font-weight: 200;
   animation: fadeInDown 1s both;
   color: #bbb;
-
 }
 
 .hero .carousel-item h2 span {
@@ -1066,11 +1058,9 @@ section,
   padding: 0;
 }
 
-
 @media (min-width: 1024px) {
   .hero h2,
-  .hero h5
-   {
+  .hero h5 {
     max-width: 48%;
   }
 }
@@ -1278,7 +1268,7 @@ section,
   color: #2c3e50; /* Azul profundo ou cinza escuro */
   font-weight: 200;
   padding: 10px 15px;
-  border-left: 4px solid #B89E7A; /* Barra dourada para um toque sofisticado */
+  border-left: 4px solid #b89e7a; /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
   border-radius: 4px; /* Bordas arredondadas */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -1384,7 +1374,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color:  rgba(181,177,169, 0.4);
+  background-color: #b7b8ba;
 }
 
 .clinica .container {
@@ -1395,11 +1385,11 @@ ul {
 .clinica h3 {
   font-size: 28px;
   font-weight: 200;
-  color: #333;
+  color: white;
 }
 
 .clinica p {
-  color: #333;
+  color: white;
 }
 
 .clinica .cta-btn {
