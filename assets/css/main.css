@@ -35,36 +35,44 @@
 
 :root {
   /* Paleta Global */
-  --background-color: #ffffff; /* Branco puro para o fundo principal */
-  --default-color: #444444; /* Cinza escuro para o texto */
-  --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
+  --background-color: #1a1a1a; /* Fundo escuro principal */
+  --default-color: #e0e0e0; /* Cinza claro para texto */
+  --heading-color: #f5f5f5; /* Branco sutil para títulos */
   --accent-color: #b89e7a; /* Dourado sofisticado */
-  --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
-  --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
+  --surface-color: #2a2a2a; /* Fundo dos cartões e elementos destacados */
+  --contrast-color: #ffffff; /* Branco puro para texto em fundos escuros */
+  --gray-tone: #555555; /* Cinza escuro para bordas e áreas neutras */
 
   /* Botões */
-  --button-background: #b89e7a; /* Fundo dourado para botões */
-  --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
-  --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
+  --button-background: #b89e7a; /* Fundo dourado */
+  --button-hover-background: #444444; /* Fundo cinza escuro no hover */
+  --button-text-color: #1a1a1a; /* Texto escuro em botões */
+  --button-border-color: #b89e7a; /* Dourado para bordas */
 
   /* Bordas */
-  --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
-  --border-hover-color: #b89e7a; /* Borda dourada ao interagir */
+  --border-color: #555555; /* Cinza escuro para bordas */
+  --border-hover-color: #b89e7a; /* Dourado ao interagir */
 
   /* Navegação */
-  --nav-color: #444444; /* Cor padrão dos links do menu */
-  --nav-hover-color: #b89e7a; /* Dourado ao passar o mouse */
-  --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
+  --nav-color: #e0e0e0; /* Texto claro no menu */
+  --nav-hover-color: #b89e7a; /* Dourado no hover */
+  --nav-mobile-background-color: #2a2a2a; /* Fundo do menu mobile */
   --nav-dropdown-background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Fundo do dropdown */
-  --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
-  --nav-dropdown-hover-color: #b89e7a; /* Dourado nos links ao passar o mouse */
+    26,
+    26,
+    26,
+    0.95
+  ); /* Fundo semitransparente para dropdown */
+  --nav-dropdown-color: #e0e0e0; /* Texto claro no dropdown */
+  --nav-dropdown-hover-color: #b89e7a; /* Dourado no hover */
+}
+
+/* Corpo e Fundo */
+body {
+  background-color: var(--background-color);
+  color: var(--default-color);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
 }
 
 /* Botões */
@@ -80,16 +88,12 @@ button {
 }
 
 button:hover {
-  background-color: color-mix(
-    in srgb,
-    var(--button-background),
-    transparent 90%
-  );
-  color: var(--default-color);
+  background-color: var(--button-hover-background);
+  color: var(--contrast-color);
   border-color: var(--border-hover-color);
 }
 
-/* Inputs e áreas destacadas */
+/* Inputs e Áreas de Destaque */
 input,
 textarea,
 select {
@@ -108,23 +112,23 @@ select:focus {
   outline: none;
 }
 
-/* Cartões e áreas de destaque */
+/* Cartões */
 .card {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .card:hover {
   border-color: var(--border-hover-color);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Links */
 a {
-  color: var(--default-color);
+  color: var(--nav-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -132,6 +136,23 @@ a {
 a:hover {
   color: var(--accent-color);
 }
+
+/* Navegação */
+.navbar {
+  background-color: var(--background-color);
+  color: var(--nav-color);
+  padding: 10px 20px;
+}
+
+.navbar a {
+  margin: 0 10px;
+  color: var(--nav-color);
+}
+
+.navbar a:hover {
+  color: var(--nav-hover-color);
+}
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -343,61 +364,67 @@ h6 {
 .header {
   color: var(--default-color);
   transition: all 0.5s;
-  z-index: 997;
+  position: sticky;
+  z-index: 1000;
   background-color: var(--background-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Sombra para transição */
 }
 
 .header .topbar {
-  background-color: #b7b8ba;
+  background-color: #2a2a2a; /* Fundo escuro */
   height: 40px;
   padding: 0;
   font-size: 14px;
   font-weight: 200;
-  transition: all 0.5s;
+  color: var(--contrast-color); /* Texto claro */
+  transition: all 0.5s ease;
 }
 
 .header .topbar .contact-info i,
 .header .topbar .contact-info a {
   font-style: normal;
-  color: white;
+  color: var(--contrast-color); /* Branco puro para contraste */
   border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 .header .topbar .contact-info a:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); /* Linha clara no hover */
+  color: var(--accent-color); /* Dourado sofisticado no hover */
 }
 
 .header .topbar .contact-info i a,
 .header .topbar .contact-info i span {
   padding-left: 5px;
+  color: var(--contrast-color);
 }
 
 @media (max-width: 575px) {
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
-    font-size: 13px;
+    font-size: 13px; /* Ajuste para telas menores */
   }
 }
 
 .header .topbar .contact-info i a {
   line-height: 0;
-  transition: 0.3s;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .header .topbar .contact-info i a:hover {
-  color: var(--contrast-color);
+  color: var(--accent-color); /* Dourado no hover */
   text-decoration: underline;
 }
 
 .header .topbar .social-links a {
-  color: white;
+  color: var(--contrast-color); /* Branco puro para ícones sociais */
   line-height: 0;
-  transition: 0.3s;
+  transition: color 0.3s ease;
   margin-left: 20px;
 }
 
 .header .topbar .social-links a:hover {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.7); /* Cinza claro no hover */
 }
 
 .header .branding {
@@ -678,12 +705,15 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: #b7b8ba;
+  color: var(--contrast-color);
+  background-color: #1a1a1a;
   text-align: center;
   padding: 40px 0;
   position: relative;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.7); /* Sombra para transição */
 }
+
+
 
 .footer h1 {
   font-size: 1.7em; /* 48px ÷ 16 = 3rem */
@@ -692,7 +722,7 @@ h6 {
   animation: fadeInDown 1s both;
   font-family: "Wild and Folk Regular", sans-serif;
   letter-spacing: 4px;
-
+  color: #bbbbbb; /* Dourado sofisticado */
 }
 
 .footer h3 {
@@ -701,7 +731,6 @@ h6 {
   text-align: center;
   padding: 0;
   margin-bottom: 1.5rem;
-  color: white;
 }
 
 .footer p {
@@ -709,6 +738,7 @@ h6 {
   font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
+  color: rgba(255, 255, 255, 0.8); /* Texto em branco com opacidade */
 }
 
 .footer .social-links {
@@ -720,33 +750,36 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8); /* Ícones com opacidade */
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   text-decoration: none;
-  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Borda clara */
 }
 
 .footer .social-links a:hover {
-  text-decoration: none;
-  border: none;
+  color: var(--accent-color); /* Dourado no hover */
+  border-color: var(--accent-color); /* Destaque no hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo claro sutil */
 }
 
 .footer .copyright {
   font-size: 13px;
   padding-top: 25px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 78%);
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha sutil */
+  color: rgba(255, 255, 255, 0.6); /* Texto claro */
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
+  color: rgba(255, 255, 255, 0.6); /* Texto com opacidade */
 }
 
 /*--------------------------------------------------------------
@@ -1267,13 +1300,12 @@ section,
 
 /* Destacar a última frase */
 .highlight {
-  color: #2c3e50; /* Azul profundo ou cinza escuro */
   font-weight: 200;
   padding: 10px 15px;
   border-left: 4px solid #b89e7a; /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
   border-radius: 4px; /* Bordas arredondadas */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra leve */
   font-size: 1.1em; /* Aumentar levemente o texto */
   font-family: var(--heading-font);
 }
@@ -1339,7 +1371,7 @@ ul {
   height: 56px;
   border-radius: 4px;
   line-height: 0;
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 
@@ -1376,7 +1408,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: #b7b8ba;
+  background-color: #2a2a2a; /* Fundo escuro */
 }
 
 .clinica .container {
@@ -1386,31 +1418,33 @@ ul {
 
 .clinica h3 {
   font-size: 28px;
-  font-weight: 200;
-  color: white;
+  font-weight: 300; /* Ajustado para um peso ligeiramente mais elegante */
+  color: var(--contrast-color); /* Branco puro */
+  margin-bottom: 20px;
 }
 
 .clinica p {
-  color: white;
+  color: #e0e0e0; /* Cinza claro para texto */
+  line-height: 1.6; /* Melhor espaçamento para leitura */
 }
 
 .clinica .cta-btn {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 40%);
   font-family: var(--heading-font);
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
-  transition: 0.3s;
-  margin: 10px;
-  background: var(--contrast-color);
-  color: var(--constrast-color);
-  border-radius: 40px;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 20px;
+  animation: fadeInUp 1s both 0.4s;
 }
 
 .clinica .cta-btn:hover {
-  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%);
-  border: 2px solid var(--constrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 /*--------------------------------------------------------------
@@ -1622,7 +1656,7 @@ ul {
 --------------------------------------------------------------*/
 .endereco .info-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   padding: 24px 0 30px 0;
 }
 
@@ -1654,7 +1688,7 @@ ul {
 
 .endereco .php-email-form {
   background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   height: 100%;
   padding: 30px;
 }
@@ -1707,7 +1741,7 @@ ul {
 --------------------------------------------------------------*/
 .contatos .info-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   padding: 24px 0 30px 0;
 }
 
