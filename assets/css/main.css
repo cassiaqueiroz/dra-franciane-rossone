@@ -361,12 +361,12 @@ h6 {
 .header .topbar .contact-info a {
   font-style: normal;
   color: #333;
-  border: none;
+  border-bottom: 1px solid transparent;
 }
 
 .header .topbar .contact-info a:hover {
   border-bottom: 1px solid
-    color-mix(in srgb, var(--contrast-color), transparent 45%);
+    rgba(3,3,3,0.3);
 }
 
 .header .topbar .contact-info i a,
