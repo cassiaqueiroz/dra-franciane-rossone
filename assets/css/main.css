@@ -42,16 +42,16 @@
   --accent-color: #B89E7A; /* Dourado sofisticado */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone: #E3E0DD; /* Cinza refinado para bordas e áreas neutras */
+  --gray-tone:  rgba(181,177,169, 0.4); /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
   --button-background: #B89E7A; /* Fundo dourado para botões */
-  --button-hover-background: #E3E0DD; /* Fundo cinza no hover */
+  --button-hover-background:  rgba(181,177,169, 0.4); /* Fundo cinza no hover */
   --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color: #E3E0DD; /* Borda cinza para botões refinados */
+  --button-border-color:  rgba(181,177,169, 0.4); /* Borda cinza para botões refinados */
 
   /* Bordas */
-  --border-color: #E3E0DD; /* Cor das bordas para inputs e seções */
+  --border-color:  rgba(181,177,169, 0.4); /* Cor das bordas para inputs e seções */
   --border-hover-color: #B89E7A; /* Borda dourada ao interagir */
 
   /* Navegação */
@@ -349,7 +349,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #E3E0DD;
+  background-color:  rgba(181,177,169, 0.4);
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -681,7 +681,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: #222;
-  background-color: #E3E0DD;
+  background-color:  rgba(181,177,169, 0.4);
   font-size: 14px;
   text-align: center;
   padding: 40px 0;
@@ -1384,7 +1384,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: #E3E0DD;
+  background-color:  rgba(181,177,169, 0.4);
 }
 
 .clinica .container {
