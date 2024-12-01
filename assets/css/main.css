@@ -36,7 +36,7 @@
   --background-color: #ffffff; /* Branco puro para o fundo principal */
   --default-color: #444444; /* Cinza escuro para o texto */
   --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #d1ad71; /* Dourado sofisticado */
+  --accent-color: #e6dac7; /* Dourado sofisticado */
   --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
   --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
   --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
@@ -1073,11 +1073,11 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: var(--heading-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 32px;
@@ -1275,7 +1275,7 @@ section,
   color: #2c3e50; /* Azul profundo ou cinza escuro */
   font-weight: 200;
   padding: 10px 15px;
-  border-left: 4px solid #d1ad71; /* Barra dourada para um toque sofisticado */
+  border-left: 4px solid #e6dac7; /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
   border-radius: 4px; /* Bordas arredondadas */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
