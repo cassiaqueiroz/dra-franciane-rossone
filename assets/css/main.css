@@ -1007,6 +1007,12 @@ section,
   animation: fadeInUp 1s both 0.4s;
 }
 
+.hero .btn-get-started i {
+  font-size: 20px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+}
+
+
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
@@ -1318,6 +1324,11 @@ ul {
 .clinica p {
   color: #e0e0e0; /* Cinza claro para texto */
   line-height: 1.6; /* Melhor espaçamento para leitura */
+}
+
+.clinica i {
+  font-size: 20px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
 .clinica .cta-btn {
