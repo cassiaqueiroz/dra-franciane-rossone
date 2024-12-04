@@ -1607,9 +1607,7 @@ ul {
 }
 
 .noncirurgicos .btn-close {
-  color: #fff !important; /* Ícone de fechar em branco */
-  background-color: transparent !important; /* Fundo transparente */
-  border: none !important; /* Remover borda */
+  color: var(--default-color); /* Ícone de fechar em texto claro */
 }
 
 .noncirurgicos .btn-close:hover {
