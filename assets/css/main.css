@@ -1501,6 +1501,42 @@ ul {
   color: var(--default-color); /* Texto em cinza claro */
 }
 
+.saiba-mais {
+  color: rgba(255, 255, 255, 0.7); /* Ícones com opacidade */
+  background: var(--background-color);
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 75%);
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 7px 28px;
+  border-radius: 40px;
+  transition: 0.5s;
+  margin-top: 20px;
+  animation: fadeInUp 1s both 0.4s;
+}
+
+.saiba-mais:hover {
+  color: var(--accent-color); /* Dourado no hover */
+  border-color: var(--accent-color); /* Destaque no hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo claro sutil */
+}
+
+.saiba-mais.active {
+  background: color-mix(in srgb, var(--contrast-color), transparent 95%);
+}
+
+
+.nav-link {
+  display: flex;
+  flex-direction: column; /* Coloca o texto e o botão em colunas */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .noncirurgicos .nav-tabs {
   border: 0;
   margin-bottom: 15px; /* Pequeno espaçamento entre as abas e o conteúdo */
@@ -1517,7 +1553,7 @@ ul {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid var(--accent-color); /* Removido borda clara */
+  border-left: 2px solid var(--accent-color); /* Removido borda clara */
   background-color: var(--surface-color); /* Fundo das abas */
 }
 
@@ -1528,21 +1564,9 @@ ul {
 }
 
 .noncirurgicos .nav-link h4 {
-  font-size: 17px;
+  font-size: 20px;
   margin: 0;
   color: var(--default-color); /* Títulos nas abas em texto claro */
-}
-
-.noncirurgicos .nav-link:hover {
-  color: var(--accent-color); /* Dourado no hover */
-  background-color:  color-mix(in srgb, var(--accent-color), transparent 70%);/* Fundo das abas no hover */
-  border-bottom: 2px solid var(--accent-color); /* Borda dourada no hover */
-}
-
-.noncirurgicos .nav-link.active {
-  background-color: var(--surface-color); /* Fundo das abas ativas */
-  color: var(--accent-color); /* Dourado no texto ativo */
-  border-bottom: 2px solid var(--accent-color); /* Borda dourada na aba ativa */
 }
 
 .noncirurgicos .tab-content {
@@ -1620,7 +1644,7 @@ ul {
 
 @media (max-width: 575px) {
   .noncirurgicos .nav-link h4 {
-    font-size: 16px; /* Ajusta o tamanho das fontes nas telas menores */
+    font-size: 18px; /* Ajusta o tamanho das fontes nas telas menores */
   }
 
   .noncirurgicos .tab-pane .noncirurgicos .nav.nav-tabs {
