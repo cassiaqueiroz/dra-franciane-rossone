@@ -422,7 +422,7 @@ h6 {
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 32px;
+  padding: 8px 30px;
   border-radius: 50px;
   transition: 0.5s;
   animation: fadeInUp 1s both 0.4s;
