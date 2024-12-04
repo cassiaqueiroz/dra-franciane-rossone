@@ -1543,13 +1543,13 @@ ul {
 }
 
 .noncirurgicos .modal-content {
-  background-color: var(--surface-color); /* Fundo do modal escuro */
+  background-color: color-mix(in srgb, var(--surface-color), transparent 10%); /* Mistura 80% da cor original com 20% de transparência */
   color: var(--default-color); /* Texto claro dentro do modal */
-  border: 1px solid var(--border-color); /* Borda sutil escura */
 }
 
 .noncirurgicos .modal-header {
-  border-bottom: 1px solid var(--border-color); /* Borda abaixo do cabeçalho */
+  border-bottom: 1px solid var(--border-color);
+  margin: 0 15px;
 }
 
 .noncirurgicos .modal-title {
