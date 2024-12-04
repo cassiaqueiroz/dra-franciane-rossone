@@ -1556,12 +1556,17 @@ ul {
   color: var(--contrast-color); /* Títulos do modal em branco puro */
 }
 
-.noncirurgicos .btn-close {
+.noncirurgicos .btn-close-white {
+  color: var(--contrast-color); /* Ícone de fechar em texto claro */
+}
+
+.noncirurgicos .btn-close-white:hover {
   color: var(--default-color); /* Ícone de fechar em texto claro */
 }
 
-.noncirurgicos .btn-close:hover {
-  color: var(--default-color); /* Ícone de fechar em texto claro */
+.btn-close-white:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .noncirurgicos .modal-footer {
