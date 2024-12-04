@@ -427,7 +427,6 @@ h6 {
   transition: 0.5s;
   animation: fadeInUp 1s both 0.4s;
   white-space: nowrap;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.6);
 }
 
 .appointment-btn:hover {
