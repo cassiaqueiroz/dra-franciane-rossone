@@ -588,6 +588,7 @@
 
       </section><!-- /Cirurgias Section -->
 
+
       <!-- Noncirurgicos Section -->
       <section id="noncirurgicos" class="noncirurgicos section">
 
@@ -599,193 +600,156 @@
 
         <div class="container">
 
-          <ul class="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
-
+          <ul class="justify-content-center nav nav-tabs row g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
             <li class="nav-item col-lg-2" role="presentation">
-              <a class="nav-link show active" data-bs-toggle="tab" data-bs-target="#noncirurgicos-tab-1"
-                aria-selected="true" role="tab">
+              <a class="nav-link" id="bioestimuladores-tab" role="tab" aria-controls="bioestimuladores"
+                aria-selected="true" data-bs-toggle="modal" data-bs-target="#bioestimuladoresModal">
                 <h4>Bioestimuladores</h4>
               </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item col-lg-2" role="presentation">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#noncirurgicos-tab-2" aria-selected="false"
-                role="tab" tabindex="-1">
+              <a class="nav-link" id="botox-tab" role="tab" aria-controls="botox" aria-selected="false"
+                data-bs-toggle="modal" data-bs-target="#botoxModal">
                 <h4>Botox</h4>
               </a><!-- End tab nav item -->
-
             </li>
+
             <li class="nav-item col-lg-2" role="presentation">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#noncirurgicos-tab-3" aria-selected="false"
-                role="tab" tabindex="-1">
+              <a class="nav-link" id="preenchimento-tab" role="tab" aria-controls="preenchimento" aria-selected="false"
+                data-bs-toggle="modal" data-bs-target="#preenchimentoModal">
                 <h4>Preenchimento</h4>
               </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item col-lg-2" role="presentation">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#noncirurgicos-tab-4" aria-selected="false"
-                role="tab" tabindex="-1">
+              <a class="nav-link" id="fios-tab" role="tab" aria-controls="fios" aria-selected="false"
+                data-bs-toggle="modal" data-bs-target="#fiosModal">
                 <h4>Fios</h4>
               </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item col-lg-2" role="presentation">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#noncirurgicos-tab-5" aria-selected="false"
-                role="tab" tabindex="-1">
+              <a class="nav-link" id="ultraformer-tab" role="tab" aria-controls="ultraformer" aria-selected="false"
+                data-bs-toggle="modal" data-bs-target="#ultraformerModal">
                 <h4>Ultraformer</h4>
               </a>
             </li><!-- End tab nav item -->
-
           </ul>
 
-          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+        </div>
 
-            <div class="tab-pane fade active show" id="noncirurgicos-tab-1" role="tabpanel">
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>Bioestimuladores de colágeno</h3>
-                  <p class="fst-italic">
-                    São ativos injetados na camada mais profunda da pele para
-                    estimular a produção de colágeno.
-                  </p>
-                  <h5>Como funcionam?</h5>
-                  <p>O colágeno é uma proteína que ajuda a manter a sustentação e
-                    firmeza da pele.
-                    Por volta dos 30 anos inicia-se um processo de perda gradual
-                    desse colágeno, o que leva ao surgimento de flacidez.</p>
-                  <h5>Que áreas podem ser tratadas?</h5>
-                  <p>Eles podem tratar a flacidez tanto na face quanto no corpo
-                    (abdome, glúteos, dorso das mãos, coxas, braços).</p>
-                  <h5>Quantas sessões são necessárias?</h5>
-                  <p>A quantidade de sessões varia de acordo com os sinais de
-                    flacidez e envelhecimento. Pacientes mais jovens quando
-                    percebem os primeiros sinais de flacidez costumam realizar
-                    apenas 1 sessão, em casos de flacidez mais acentuada estão
-                    indicadas mais sessões, em média 3 sessões.</p>
-                  <h5>Quando faz efeito?</h5>
-                  <p>Os resultados são percebidos em 2-3 meses após a aplicação.</p>
-                  <h5>Qual a durabilidade?</h5>
-                  <p>Os efeitos duram de 1-2 anos, podendo variar de acordo com o
-                    princípio ativo do bioestimulador, idade e estilo de vida.</p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center mt-3">
-                  <img src="assets/img/fr8.jpg" alt="" class="img-fluid">
-                </div>
+        <!-- Modais -->
+
+        <!-- Modal Bioestimuladores -->
+        <div class="modal fade" id="bioestimuladoresModal" tabindex="-1" aria-labelledby="bioestimuladoresModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="bioestimuladoresModalLabel">Bioestimuladores de colágeno</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </div><!-- End tab content item -->
-
-            <div class="tab-pane fade" id="noncirurgicos-tab-2" role="tabpanel">
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>Botox</h3>
-                  <h5>Como ele age?</h5>
-                  <p>A toxina botulínica age paralisando a musculatura da mímica
-                    facial que desejamos tratar, evitando que a pele sobrejacente
-                    crie vincos e rugas.
-                    E além do uso cosmético para suavizar rugas de expressão, a
-                    toxina botulínica também pode ser usada para tratar bruxismo,
-                    sorriso gengival e suor excessivo.</p>
-                  <h5>Qual a idade para começar a aplicação?</h5>
-                  <p>Apesar de não existir idade indicada para começar o
-                    tratamento, quando a toxina é aplicada de forma preventiva
-                    evita-se que as linhas de expressão dinâmicas se tornem
-                    estáticas.
-                  </p>
-                  <h5>Qual a durabilidade?</h5>
-                  <p>Até 4-6 meses.</p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center mt-3">
-                  <img src="assets/img/fr9.jpg" alt="" class="img-fluid">
-                </div>
+              <div class="modal-body">
+                <h5>Como funcionam?</h5>
+                <p>O colágeno é uma proteína que ajuda a manter a sustentação e firmeza da pele. Por volta dos 30 anos
+                  inicia-se um processo de perda gradual desse colágeno, o que leva ao surgimento de flacidez.</p>
+                <h5>Que áreas podem ser tratadas?</h5>
+                <p>Eles podem tratar a flacidez tanto na face quanto no corpo (abdome, glúteos, dorso das mãos, coxas,
+                  braços).</p>
+                <h5>Quantas sessões são necessárias?</h5>
+                <p>A quantidade de sessões varia de acordo com os sinais de flacidez e envelhecimento. Pacientes mais
+                  jovens quando percebem os primeiros sinais de flacidez costumam realizar apenas 1 sessão, em casos de
+                  flacidez mais acentuada estão indicadas mais sessões, em média 3 sessões.</p>
+                <h5>Quando faz efeito?</h5>
+                <p>Os resultados são percebidos em 2-3 meses após a aplicação.</p>
+                <h5>Qual a durabilidade?</h5>
+                <p>Os efeitos duram de 1-2 anos, podendo variar de acordo com o princípio ativo do bioestimulador, idade
+                  e estilo de vida.</p>
               </div>
-            </div><!-- End tab content item -->
-
-            <div class="tab-pane fade" id="noncirurgicos-tab-3" role="tabpanel">
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>Preenchimento</h3>
-                  <h5>Facial</h5>
-                  <p>Os preenchimentos usados são a base de ácido hialurônico,
-                    substância que é produzida pelo próprio corpo, não havendo
-                    risco de rejeição. O objetivo é restaurar o volume que foi
-                    perdido com o envelhecimento, sustentar a face com
-                    aplicações em pontos estratégicos, embelezar algumas áreas,
-                    melhorar o contorno e harmonia da face. Não existe número
-                    estabelecido de seringas e muito menos técnicas padronizadas.
-                    O paciente é avaliado, levando-se em conta suas
-                    características e queixas e a partir disso, é feito um
-                    planejamento individualizado.</p>
-                  <h5>Corporal</h5>
-                  <p>Além dos preenchedores usados na face, existe também
-                    preenchedor a base de ácido hialurônico para uso corporal.
-                    É possível melhorar o aspecto dos glúteos de forma segura,
-                    volumizando, empinando e corrigindo a depressão na lateral
-                    do quadril.</p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center mt-3">
-                  <img src="assets/img/fr4.jpeg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div><!-- End tab content item -->
-
-            <div class="tab-pane fade" id="noncirurgicos-tab-4" role="tabpanel">
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>Fios</h3>
-                  <p>
-                    Existem hoje diversos tipos e modelos de fios. Os fios
-                    absorvíveis são nossa preferência por serem bicompatíveis.
-                    Destacam-se os fios de PDO (polidioxanona) ou PLLA (ácido
-                    polilático) que promovem estímulo de colágeno. Alguns deles
-                    promovem inicialmente a suspensão dos tecidos caídos e com
-                    a produção de colágeno, melhoram a sustentação da pele.
-                  </p>
-                  <ul>
-                  </ul>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center mt-3">
-                  <img src="assets/img/fr10.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div><!-- End tab content item -->
-
-            <div class="tab-pane fade" id="noncirurgicos-tab-5" role="tabpanel">
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>Ultraformer</h3>
-                  <p class="fst-italic">É um ultrassom micro e macrofocado, ou seja pode ser
-                    utilizado em tratamentos faciais e corporais.
-                    Ele tem o potencial de atuar em profundidades diferentes, na
-                    derme profunda, estimulando a produção de colágeno, na
-                    fáscia muscular, promovendo efeito lifting e na camada de
-                    gordura, coagulando e destruindo células gordurosas.</p>
-                  <h5>Quais as indicações?</h5>
-                  <p>O ultraformer está indicado para tratamento dos sinais do
-                    envelhecimento, assim como embelezamento, podendo
-                    promover:</p>
-                  <ol>
-                    <li>Efeito lifting;</li>
-                    <li>Melhora de sulcos como bigode chinês;</li>
-                    <li>Melhora do contorno da face;</li>
-                    <li>Melhora do jowl, conhecido como efeito bulldog;</li>
-                    <li>Efeito bichectomia;</li>
-                    <li>Melhora da firmeza da pele;</li>
-                    <li>Arqueamento das sobrancelhas, com efeito fox eyes;</li>
-                    <li>Redução da papada.</li>
-                  </ol>
-                  <p>No corpo, podemos utilizá-lo para tratar flacidez de pele no
-                    abdome, aspecto de umbigo triste, interno de coxas, por
-                    exemplo. Além de ser útil em pequenas áreas com gordura
-                    localizada.</p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center mt-3">
-                  <img src="assets/img/fr7.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div><!-- End tab content item -->
-
+            </div>
           </div>
+        </div>
 
+        <!-- Modal Botox -->
+        <div class="modal fade" id="botoxModal" tabindex="-1" aria-labelledby="botoxModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="botoxModalLabel">Botox</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Como ele age?</h5>
+                <p>A toxina botulínica age paralisando a musculatura da mímica facial que desejamos tratar, evitando que
+                  a pele sobrejacente crie vincos e rugas. E além do uso cosmético para suavizar rugas de expressão, a
+                  toxina botulínica também pode ser usada para tratar bruxismo, sorriso gengival e suor excessivo.</p>
+                <h5>Qual a idade para começar a aplicação?</h5>
+                <p>Apesar de não existir idade indicada para começar o tratamento, quando a toxina é aplicada de forma
+                  preventiva evita-se que as linhas de expressão dinâmicas se tornem estáticas.</p>
+                <h5>Qual a durabilidade?</h5>
+                <p>Até 4-6 meses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Preenchimento -->
+        <div class="modal fade" id="preenchimentoModal" tabindex="-1" aria-labelledby="preenchimentoModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="preenchimentoModalLabel">Preenchimento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Facial</h5>
+                <p>Os preenchimentos usados são a base de ácido hialurônico, substância que é produzida pelo próprio
+                  corpo, não havendo risco de rejeição. O objetivo é restaurar o volume que foi perdido com o
+                  envelhecimento, sustentar a face com aplicações em pontos estratégicos, embelezar algumas áreas,
+                  melhorar o contorno e harmonia da face.</p>
+                <h5>Corporal</h5>
+                <p>Além dos preenchedores usados na face, existe também preenchedor a base de ácido hialurônico para uso
+                  corporal. É possível melhorar o aspecto dos glúteos de forma segura, volumizando, empinando e
+                  corrigindo a depressão na lateral do quadril.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Fios -->
+        <div class="modal fade" id="fiosModal" tabindex="-1" aria-labelledby="fiosModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="fiosModalLabel">Fios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Existem hoje diversos tipos e marcas de fios de sustentação, geralmente eles são absorvíveis e por
+                  serem mais duráveis, melhorando o contorno da face, do pescoço, dos braços e glúteos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Ultraformer -->
+        <div class="modal fade" id="ultraformerModal" tabindex="-1" aria-labelledby="ultraformerModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ultraformerModalLabel">Ultraformer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Ultraformer</strong> é um ultrassom micro e macrofocado, usado em tratamentos faciais e
+                  corporais. Ele atua em profundidades diferentes, estimulando a produção de colágeno, promovendo efeito
+                  lifting e destruindo células gordurosas.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </section><!-- /Noncirurgicos Section -->
