@@ -370,63 +370,6 @@ h6 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); /* Sombra para transição */
 }
 
-.header .topbar {
-  background-color: #2a2a2a; /* Fundo escuro */
-  height: 40px;
-  padding: 0;
-  font-size: 14px;
-  font-weight: 200;
-  color: var(--contrast-color); /* Texto claro */
-  transition: all 0.5s ease;
-}
-
-.header .topbar .contact-info i,
-.header .topbar .contact-info a {
-  font-style: normal;
-  color: var(--contrast-color); /* Branco puro para contraste */
-  border-bottom: 1px solid transparent;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-}
-
-.header .topbar .contact-info a:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6); /* Linha clara no hover */
-  color: var(--accent-color); /* Dourado sofisticado no hover */
-}
-
-.header .topbar .contact-info i a,
-.header .topbar .contact-info i span {
-  padding-left: 5px;
-  color: var(--contrast-color);
-}
-
-@media (max-width: 575px) {
-  .header .topbar .contact-info i a,
-  .header .topbar .contact-info i span {
-    font-size: 13px; /* Ajuste para telas menores */
-  }
-}
-
-.header .topbar .contact-info i a {
-  line-height: 0;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.header .topbar .contact-info i a:hover {
-  color: var(--accent-color); /* Dourado no hover */
-  text-decoration: underline;
-}
-
-.header .topbar .social-links a {
-  color: var(--contrast-color); /* Branco puro para ícones sociais */
-  line-height: 0;
-  transition: color 0.3s ease;
-  margin-left: 20px;
-}
-
-.header .topbar .social-links a:hover {
-  color: rgba(255, 255, 255, 0.7); /* Cinza claro no hover */
-}
-
 .header .branding {
   min-height: 60px;
   padding: 10px 0;
