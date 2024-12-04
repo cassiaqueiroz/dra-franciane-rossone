@@ -200,87 +200,6 @@ h6 {
   letter-spacing: 10px; /* ou mantenha proporcional como "0.736em" */
 }
 
-/* Pulsating Play Button
-------------------------------*/
-.pulsating-play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(
-    var(--accent-color) 50%,
-    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
-  );
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.pulsating-play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  animation: pulsate-play-btn 2s;
-  animation-delay: 0s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.pulsating-play-btn:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.pulsating-play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  animation: none;
-  border-radius: 0;
-}
-
-.pulsating-play-btn:hover:after {
-  border-left: 15px solid var(--accent-color);
-  transform: scale(20);
-}
-
-@keyframes pulsate-play-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
 
 /* PHP Email Form Messages
 ------------------------------*/
@@ -1502,30 +1421,26 @@ ul {
 }
 
 .saiba-mais {
-  color: rgba(255, 255, 255, 0.7); /* Ícones com opacidade */
-  background: var(--background-color);
-  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 75%);
-  font-family: var(--heading-font);
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 7px 28px;
-  border-radius: 40px;
-  transition: 0.5s;
-  margin-top: 20px;
-  animation: fadeInUp 1s both 0.4s;
-}
-
-.saiba-mais:hover {
-  color: var(--accent-color); /* Dourado no hover */
-  border-color: var(--accent-color); /* Destaque no hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo claro sutil */
-}
-
-.saiba-mais.active {
-  background: color-mix(in srgb, var(--contrast-color), transparent 95%);
-}
+    margin-top: 20px;
+    color: var(--contrast-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 40%);
+    font-family: var(--heading-font);
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 7px 28px;
+    border-radius: 40px;
+    transition: 0.5s;
+    animation: fadeInUp 1s both 0.4s;
+    white-space: nowrap;
+  }
+  
+  .saiba-mais:hover {
+    color: var(--contrast-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 70%);
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  }
 
 
 .nav-link {
