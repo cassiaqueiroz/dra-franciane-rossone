@@ -1538,6 +1538,7 @@ ul {
 .noncirurgicos .animated-icon {
   font-size: 1.5rem;
   color: #007bff;
+  margin-left: 15px;
   transition: transform 0.3s ease;
 }
 
