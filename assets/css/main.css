@@ -314,10 +314,10 @@ h6 {
   background: color-mix(in srgb, var(--accent-color), transparent 40%);
   font-family: var(--heading-font);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 7px 28px;
+  padding: 6px 24px;
   border-radius: 40px;
   transition: 0.5s;
   animation: fadeInUp 1s both 0.4s;
@@ -331,7 +331,7 @@ h6 {
 }
 
 .appointment-btn i {
-  font-size: 20px;
+  font-size: 18px;
   color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
