@@ -1819,7 +1819,7 @@ ul {
 .contatos .info-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  padding: 24px 0 30px 0;
+  padding: 24px 10px 30px 10px;
 }
 
 .contatos .info-item i {
