@@ -308,8 +308,6 @@ h6 {
 * Appointment Button
 */
 .appointment-btn {
-  margin-left: 25px;
-  margin-right: 50px;
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 40%);
   font-family: var(--heading-font);
@@ -333,12 +331,6 @@ h6 {
 .appointment-btn i {
   font-size: 18px;
   color: color-mix(in srgb, var(--contrast-color), transparent 20%);
-}
-
-@media (max-width: 820px) {
-  .appointment-btn {
-    margin-right: 3em;
-  }
 }
 
 
