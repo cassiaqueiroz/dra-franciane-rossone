@@ -1565,13 +1565,6 @@ ul {
   }
 }
 
-/* Quando o ícone for clicado no mobile, a animação é aplicada */
-.noncirurgicos .animated-icon.active {
-  transform: translateX(4px);
-  color: #0056b3;
-  animation: fadePulse 1.2s ease-in-out infinite; /* Efeito pulse */
-}
-
 .nav-link {
   display: flex;
   flex-direction: column; /* Coloca o texto e o botão em colunas */
