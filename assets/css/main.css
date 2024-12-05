@@ -1461,6 +1461,10 @@ ul {
   padding-top: 12px;
 }
 
+.faq-container .faq-item p {
+  padding-bottom: 12px;
+}
+
 @media (max-width: 575px) {
   .faq-container .faq-item h3 {
     font-size: 17px; /* Garantir o tamanho inicial */
