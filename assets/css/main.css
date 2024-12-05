@@ -1534,6 +1534,10 @@ ul {
   color: var(--default-color); /* Texto em cinza claro */
 }
 
+.icon-text {
+  display: inline-block; /* Isso faz com que o texto e o ícone fiquem lado a lado */
+}
+
 /* Estilo do ícone de seta */
 .noncirurgicos .animated-icon {
   font-size: 1.5rem;
@@ -1603,7 +1607,7 @@ ul {
 }
 
 .noncirurgicos .nav-link i {
-  padding-right: 15px;
+  margin-top: 10px;
   font-size: 24px;
   color: var(--accent-color); /* Ícones dourados */
 }
