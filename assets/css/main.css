@@ -1423,6 +1423,106 @@ ul {
   }
 } */
 
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.faq-description {
+  font-size: 1rem;
+  color: var(--default-color);
+  margin-bottom: 2rem;
+}
+
+.faq-arrow {
+  color: var(--accent-color);
+}
+
+.faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-container .faq-item h3 {
+  font-weight: 300;
+  font-size: 16px; /* Garantir o tamanho inicial */
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: color 0.3s, transform 0.3s; /* Adicionar transição suave para propriedades animáveis */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq-container .faq-item h3:hover {
+  color: var(--accent-color); /* Apenas alteração de cor */
+  /* Não adicionar mudanças no tamanho ou estilo geral aqui */
+}
+
+.faq-container .faq-item .faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-container .faq-item.faq-active .faq-content {
+  max-height: 500px; /* Defina um valor alto o suficiente para acomodar o conteúdo */
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+.faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq-container .faq-active h3 {
+  color: var(--accent-color); /* Somente cor alterada */
+  /* Font-size e outros estilos permanecem iguais para consistência */
+}
+
+.faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+
+
 /*--------------------------------------------------------------
 # Noncirurgicos Section
 --------------------------------------------------------------*/
