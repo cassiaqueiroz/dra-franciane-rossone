@@ -479,7 +479,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: color-mix(var(--nav-dropdown-background-color), transparent 2%);
+    background-color: color-mix(var(--nav-dropdown-background-color), transparent 1%);
     border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
     overflow-y: auto;
     transition: 0.3s;
