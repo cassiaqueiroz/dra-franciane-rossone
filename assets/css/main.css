@@ -1438,7 +1438,6 @@ ul {
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -1455,6 +1454,11 @@ ul {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.faq-container .faq-item h5 {
+  font-size: 16px; /* Garantir o tamanho inicial */
+  padding-top: 12px;
 }
 
 @media (max-width: 575px) {
@@ -1522,8 +1526,6 @@ ul {
   color: var(--accent-color);
 }
 
-
-
 /*--------------------------------------------------------------
 # Noncirurgicos Section
 --------------------------------------------------------------*/
@@ -1532,33 +1534,43 @@ ul {
   color: var(--default-color); /* Texto em cinza claro */
 }
 
-.saiba-mais {
-    margin-top: 20px;
-    color: var(--contrast-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 40%);
-    font-family: var(--heading-font);
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    border: 0;
-    padding: 7px 28px;
-    border-radius: 40px;
-    transition: 0.5s;
-    animation: fadeInUp 1s both 0.4s;
-    white-space: nowrap;
-  }
-  
-  .saiba-mais:hover {
-    color: var(--contrast-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 70%);
-  }
+/* Estilo do ícone de seta */
+.noncirurgicos .animated-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
 
+.noncirurgicos .animated-icon:hover {
+  transform: translateX(8px); /* Seta se move suavemente para a direita ao passar o mouse */
+  animation: bounce 0.6s ease infinite; /* Animação de "bounce" */
+}
 
-  .saiba-mais:focus {
-    border: none;
-    color: var(--contrast-color);
+/* Animação de bounce */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
+  30% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Quando o ícone for clicado no mobile, a animação é aplicada */
+.noncirurgicos .animated-icon.active {
+  transform: translateX(4px);
+  color: #0056b3;
+  animation: fadePulse 1.2s ease-in-out infinite; /* Efeito pulse */
+}
 
 .nav-link {
   display: flex;
@@ -1599,7 +1611,7 @@ ul {
 
 .noncirurgicos .nav-link i {
   padding-right: 15px;
-  font-size: 48px;
+  font-size: 24px;
   color: var(--accent-color); /* Ícones dourados */
 }
 
