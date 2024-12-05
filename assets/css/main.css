@@ -1536,9 +1536,9 @@ ul {
 
 /* Estilo do ícone de seta */
 .noncirurgicos .animated-icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #007bff;
-  margin-left: 15px;
+  margin-left: 1em;
   transition: transform 0.3s ease;
 }
 
