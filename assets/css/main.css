@@ -1591,15 +1591,16 @@ ul {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid var(--contrast-color); /* Removido borda clara */
+  background: var(--surface-color);
+  border-left: 2px solid var(--contrast-color); /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link:hover {
-  border-bottom: 2px solid var(--contrast-color); /* Removido borda clara */
+  border-left: 2px solid var(--contrast-color); /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link:focus {
-  border-bottom: 2px solid var(--contrast-color); /* Removido borda clara */
+  border-left: 2px solid var(--contrast-color); /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link i {
