@@ -479,7 +479,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: var(--nav-dropdown-background-color);
+    background-color: color-mix(var(--nav-dropdown-background-color), transparent 2%);
     border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
     overflow-y: auto;
     transition: 0.3s;
@@ -1540,9 +1540,8 @@ ul {
 
 /* Estilo do ícone de seta */
 .noncirurgicos .animated-icon {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #007bff;
-  margin-left: 1em;
   transition: transform 0.3s ease;
 }
 
@@ -1609,12 +1608,12 @@ ul {
 
 .noncirurgicos .nav-link i {
   margin-top: 5px;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--accent-color); /* Ícones dourados */
 }
 
 .noncirurgicos .nav-link h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   padding: 10px;
   color: var(--default-color); /* Títulos nas abas em texto claro */
