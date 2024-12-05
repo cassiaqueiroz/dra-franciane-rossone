@@ -1485,7 +1485,7 @@ ul {
 }
 
 .faq-container .faq-item.faq-active .faq-content {
-  max-height: 500px; /* Defina um valor alto o suficiente para acomodar o conteúdo */
+  max-height: 800px; /* Defina um valor alto o suficiente para acomodar o conteúdo */
   transition: max-height 0.3s ease-in-out;
 }
 
