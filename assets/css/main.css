@@ -1673,8 +1673,7 @@ ul {
 
 .noncirurgicos .nav-link {
   color: var(--default-color);
-  /* Texto claro */
-  padding: 15px 0;
+  padding: 8px;
   transition: 0.3s;
   border-radius: 0;
   display: flex;
@@ -1685,7 +1684,12 @@ ul {
   border: 0;
   background: var(--surface-color);
   border-left: 2px solid var(--accent-color);
-  /* Removido borda clara */
+  white-space: nowrap;
+  /* Garante uma única linha */
+  flex-wrap: nowrap;
+  /* Impede quebra de linha */
+  gap: 8px;
+  /* Espaço entre ícone e texto */
 }
 
 .noncirurgicos .nav-link:hover {
