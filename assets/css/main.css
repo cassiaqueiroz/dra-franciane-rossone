@@ -1546,13 +1546,6 @@ ul {
   padding-bottom: 12px;
 }
 
-@media (max-width: 575px) {
-  .faq-container .faq-item h3 {
-    font-size: 17px;
-    /* Garantir o tamanho inicial */
-  }
-}
-
 
 .faq-container .faq-item h3 .num {
   color: var(--accent-color);
