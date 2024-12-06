@@ -35,30 +35,43 @@
 
 :root {
   /* Paleta Global */
-  --background-color: #1a1a1a; /* Fundo escuro principal */
-  --default-color: #e0e0e0; /* Cinza claro para texto */
-  --heading-color: #f5f5f5; /* Branco sutil para títulos */
-  --accent-color: #b89e7a; /* Dourado sofisticado */
-  --surface-color: #2a2a2a; /* Fundo dos cartões e elementos destacados */
-  --contrast-color: #ffffff; /* Branco puro para texto em fundos escuros */
-  --gray-tone: #555555; /* Cinza escuro para bordas e áreas neutras */
+  --background-color: #1a1a1a;
+  /* Fundo escuro principal */
+  --default-color: #e0e0e0;
+  /* Cinza claro para texto */
+  --heading-color: #f5f5f5;
+  /* Branco sutil para títulos */
+  --accent-color: #b89e7a;
+  /* Dourado sofisticado */
+  --surface-color: #2a2a2a;
+  /* Fundo dos cartões e elementos destacados */
+  --contrast-color: #ffffff;
+  /* Branco puro para texto em fundos escuros */
+  --gray-tone: #555555;
+  /* Cinza escuro para bordas e áreas neutras */
 
   /* Bordas */
-  --border-color: #555555; /* Cinza escuro para bordas */
-  --border-hover-color: #b89e7a; /* Dourado ao interagir */
+  --border-color: #555555;
+  /* Cinza escuro para bordas */
+  --border-hover-color: #b89e7a;
+  /* Dourado ao interagir */
 
   /* Navegação */
-  --nav-color: #e0e0e0; /* Texto claro no menu */
-  --nav-hover-color: #b89e7a; /* Dourado no hover */
-  --nav-mobile-background-color: #1a1a1a; /* Fundo do menu mobile */
-  --nav-dropdown-background-color: rgba(
-    26,
-    26,
-    26,
-    1
-  ); /* Fundo semitransparente para dropdown */
-  --nav-dropdown-color: #e0e0e0; /* Texto claro no dropdown */
-  --nav-dropdown-hover-color: #b89e7a; /* Dourado no hover */
+  --nav-color: #e0e0e0;
+  /* Texto claro no menu */
+  --nav-hover-color: #b89e7a;
+  /* Dourado no hover */
+  --nav-mobile-background-color: #1a1a1a;
+  /* Fundo do menu mobile */
+  --nav-dropdown-background-color: rgba(26,
+      26,
+      26,
+      1);
+  /* Fundo semitransparente para dropdown */
+  --nav-dropdown-color: #e0e0e0;
+  /* Texto claro no dropdown */
+  --nav-dropdown-hover-color: #b89e7a;
+  /* Dourado no hover */
 }
 
 /* Corpo e Fundo */
@@ -197,7 +210,8 @@ h6 {
   font-family: "Kiona Regular", sans-serif;
   font-weight: 200;
   color: #e5d4d3;
-  letter-spacing: 10px; /* ou mantenha proporcional como "0.736em" */
+  letter-spacing: 10px;
+  /* ou mantenha proporcional como "0.736em" */
 }
 
 
@@ -262,19 +276,21 @@ h6 {
   position: sticky;
   z-index: 1000;
   background-color: var(--background-color);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); /* Sombra para transição */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  /* Sombra para transição */
 }
 
 .header .branding {
   min-height: 60px;
-  display:: flex;
+  display: : flex;
   justify-content: space-between;
   padding: 10px 0;
 }
 
 @media (max-width: 1199px) {
   .header .branding {
-    display: block; /* Evita que o flexbox cause sobreposição em telas menores */
+    display: block;
+    /* Evita que o flexbox cause sobreposição em telas menores */
   }
 }
 
@@ -333,6 +349,13 @@ h6 {
   color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
+@media (max-width: 1199px) {
+  .beside-toggle-btn {
+    margin-right: 3.5rem;
+    /* Define o espaçamento */
+    /* Adicione outras personalizações, se necessário */
+  }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -381,7 +404,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -392,7 +415,8 @@ h6 {
     padding: 10px 0;
     background: var(--nav-dropdown-background-color);
     display: block;
-    border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    /* Borda sutil */
     position: absolute;
     visibility: hidden;
     left: 14px;
@@ -421,11 +445,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -437,7 +461,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -451,12 +475,16 @@ h6 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    position: absolute;  /* Colocando o toggle em posição absoluta */
-    top: 5px;  /* Distância do topo */
-    right: 15px;  /* Distância da direita */
+    position: absolute;
+    /* Colocando o toggle em posição absoluta */
+    top: 5px;
+    /* Distância do topo */
+    right: 15px;
+    /* Distância da direita */
     cursor: pointer;
     transition: color 0.3s;
-    z-index: 9999;  /* Garantindo que o botão fique sobre outros elementos */
+    z-index: 9999;
+    /* Garantindo que o botão fique sobre outros elementos */
   }
 
   .navmenu {
@@ -472,7 +500,8 @@ h6 {
     padding: 10px 0;
     margin: 0;
     background-color: color-mix(var(--nav-dropdown-background-color), transparent 0.5%);
-    border: 1px solid rgba(255, 255, 255, 0.04); /* Borda sutil */
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    /* Borda sutil */
     overflow-y: auto;
     transition: 0.3s;
     border-radius: 4px;
@@ -552,7 +581,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -566,7 +595,8 @@ h6 {
     position: absolute;
     font-size: 32px;
     top: 15px;
-    right: 15px;  /* Certificando que fica no canto direito */
+    right: 15px;
+    /* Certificando que fica no canto direito */
     margin-right: 0;
     z-index: 9999;
   }
@@ -579,7 +609,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -594,23 +624,27 @@ h6 {
   text-align: center;
   padding: 40px 0;
   position: relative;
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5); /* Sombra para transição */
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra para transição */
 }
 
 
 
 .footer h1 {
-  font-size: 1.5em; /* 48px ÷ 16 = 3rem */
+  font-size: 1.5em;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
   font-family: "Wild and Folk Regular", sans-serif;
   letter-spacing: 4px;
-  color: #bbbbbb; /* Dourado sofisticado */
+  color: #bbbbbb;
+  /* Dourado sofisticado */
 }
 
 .footer h3 {
-  font-size: 0.8em; /* 38px ÷ 16 = 2.375rem */
+  font-size: 0.8em;
+  /* 38px ÷ 16 = 2.375rem */
   font-weight: 500;
   text-align: center;
   padding: 0;
@@ -622,7 +656,8 @@ h6 {
   font-style: italic;
   padding: 0;
   margin: 0 0 30px 0;
-  color: rgba(255, 255, 255, 0.8); /* Texto em branco com opacidade */
+  color: rgba(255, 255, 255, 0.8);
+  /* Texto em branco com opacidade */
 }
 
 .footer .social-links {
@@ -634,7 +669,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.7); /* Ícones com opacidade */
+  color: rgba(255, 255, 255, 0.7);
+  /* Ícones com opacidade */
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
@@ -644,26 +680,33 @@ h6 {
   transition: all 0.3s ease;
   text-decoration: none;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.4); /* Borda clara */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  /* Borda clara */
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color); /* Dourado no hover */
-  border-color: var(--accent-color); /* Destaque no hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo claro sutil */
+  color: var(--accent-color);
+  /* Dourado no hover */
+  border-color: var(--accent-color);
+  /* Destaque no hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Fundo claro sutil */
 }
 
 .footer .copyright {
   font-size: 13px;
   padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha sutil */
-  color: rgba(255, 255, 255, 0.6); /* Texto claro */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  /* Linha sutil */
+  color: rgba(255, 255, 255, 0.6);
+  /* Texto claro */
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
-  color: rgba(255, 255, 255, 0.6); /* Texto com opacidade */
+  color: rgba(255, 255, 255, 0.6);
+  /* Texto com opacidade */
 }
 
 /*--------------------------------------------------------------
@@ -724,7 +767,8 @@ h6 {
   color: var(--contrast-color);
   line-height: 0;
   font-weight: 200;
-  transform: scaleX(1.1); /* Aumenta a largura do ícone */
+  transform: scaleX(1.1);
+  /* Aumenta a largura do ícone */
 }
 
 .scroll-top:hover {
@@ -757,8 +801,7 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -780,11 +823,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title nav ol li + li {
+.page-title nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -804,6 +847,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 100px;
@@ -869,7 +913,8 @@ section,
 .hero .doctor-name {
   color: #bbbbbb;
   font-family: "Wild and Folk Regular", sans-serif;
-  letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
+  letter-spacing: 4px;
+  /* ou use "0.736em" para manter a proporção */
 }
 
 .hero .carousel {
@@ -895,8 +940,10 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra a área do contêiner */
-  object-position: top; /* Alinha a imagem no topo */
+  object-fit: cover;
+  /* Garante que a imagem cubra a área do contêiner */
+  object-position: top;
+  /* Alinha a imagem no topo */
   z-index: 1;
 }
 
@@ -906,8 +953,10 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra a área do contêiner */
-  object-position: center center; /* Alinha a imagem no topo */
+  object-fit: cover;
+  /* Garante que a imagem cubra a área do contêiner */
+  object-position: center center;
+  /* Alinha a imagem no topo */
   z-index: 1;
 }
 
@@ -915,8 +964,10 @@ section,
 .hero .carousel-item {
   position: absolute;
   inset: 0;
-  background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  /* Faz a imagem de fundo cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -927,29 +978,36 @@ section,
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
-  z-index: 2; /* Garantir que fique acima do fundo */
+  z-index: 2;
+  /* Garantir que fique acima do fundo */
 }
 
 .hero .carousel-container {
   position: absolute;
-  inset: 64px; /* Define espaçamento uniforme */
+  inset: 64px;
+  /* Define espaçamento uniforme */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Move o conteúdo para o final do container */
+  justify-content: flex-end;
+  /* Move o conteúdo para o final do container */
   align-items: center;
   text-align: center;
   z-index: 3;
-  padding-bottom: 50px; /* Ajuste o espaço na parte inferior */
+  padding-bottom: 50px;
+  /* Ajuste o espaço na parte inferior */
 }
+
 .hero .carousel-item h1 {
-  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
+  font-size: 1.7em;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
 }
 
 .hero .carousel-item h2 {
-  font-size: 2rem; /* 48px ÷ 16 = 3rem */
+  font-size: 2rem;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   animation: fadeInDown 1s both;
   color: #bbb;
@@ -961,7 +1019,8 @@ section,
 
 @media (max-width: 768px) {
   .hero .carousel-item h2 {
-    font-size: 1.875rem; /* 30px ÷ 16 = 1.875rem */
+    font-size: 1.875rem;
+    /* 30px ÷ 16 = 1.875rem */
   }
 }
 
@@ -971,13 +1030,15 @@ section,
 }
 
 .hero h3 {
-  font-size: 1em; /* 38px ÷ 16 = 2.375rem */
+  font-size: 1em;
+  /* 38px ÷ 16 = 2.375rem */
   font-weight: 500;
   text-align: center;
   padding: 0;
 }
 
 @media (min-width: 1024px) {
+
   .hero h2,
   .hero h5 {
     max-width: 48%;
@@ -1027,6 +1088,7 @@ section,
 }
 
 @media (min-width: 1024px) {
+
   .hero .carousel-control-prev,
   .hero .carousel-control-next {
     width: 5%;
@@ -1058,7 +1120,8 @@ section,
   opacity: 1;
 }
 
-@media (max-height: 768px), (max-width: 1024px) {
+@media (max-height: 768px),
+(max-width: 1024px) {
   .hero .carousel-indicators li {
     margin-bottom: 20px;
   }
@@ -1072,7 +1135,8 @@ section,
   z-index: 2;
 }
 
-@media (max-height: 768px), (max-width: 1024px) {
+@media (max-height: 768px),
+(max-width: 1024px) {
   .hero .featured {
     margin-top: 0;
   }
@@ -1192,11 +1256,15 @@ section,
 .highlight {
   font-weight: 200;
   padding: 10px 15px;
-  border-left: 4px solid #b89e7a; /* Barra dourada para um toque sofisticado */
+  border-left: 4px solid #b89e7a;
+  /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
-  border-radius: 4px; /* Bordas arredondadas */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra leve */
-  font-size: 1.1em; /* Aumentar levemente o texto */
+  border-radius: 4px;
+  /* Bordas arredondadas */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Sombra leve */
+  font-size: 1.1em;
+  /* Aumentar levemente o texto */
   font-family: var(--heading-font);
 }
 
@@ -1223,7 +1291,8 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  object-position: 50% 20%; /* Centraliza horizontalmente e alinha ao topo */
+  object-position: 50% 20%;
+  /* Centraliza horizontalmente e alinha ao topo */
 }
 
 .consulta h3 {
@@ -1298,7 +1367,8 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: #2a2a2a; /* Fundo escuro */
+  background-color: #2a2a2a;
+  /* Fundo escuro */
 }
 
 .clinica .container {
@@ -1308,14 +1378,18 @@ ul {
 
 .clinica h3 {
   font-size: 28px;
-  font-weight: 300; /* Ajustado para um peso ligeiramente mais elegante */
-  color: var(--contrast-color); /* Branco puro */
+  font-weight: 300;
+  /* Ajustado para um peso ligeiramente mais elegante */
+  color: var(--contrast-color);
+  /* Branco puro */
   margin-bottom: 20px;
 }
 
 .clinica p {
-  color: #e0e0e0; /* Cinza claro para texto */
-  line-height: 1.6; /* Melhor espaçamento para leitura */
+  color: #e0e0e0;
+  /* Cinza claro para texto */
+  line-height: 1.6;
+  /* Melhor espaçamento para leitura */
 }
 
 .clinica i {
@@ -1350,9 +1424,12 @@ ul {
 }
 
 .cirurgias img {
-  display: block; /* Remove o espaço extra ao redor da imagem */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+  /* Remove o espaço extra ao redor da imagem */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  height: auto;
+  /* Mantém a proporção da imagem */
   object-fit: cover;
 }
 
@@ -1366,8 +1443,7 @@ ul {
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 200;
   font-size: 17px;
   font-family: var(--heading-font);
@@ -1439,17 +1515,20 @@ ul {
 
 .faq-container .faq-item h3 {
   font-weight: 200;
-  font-size: 18px; /* Garantir o tamanho inicial */
+  font-size: 18px;
+  /* Garantir o tamanho inicial */
   line-height: 24px;
   margin: 0 30px 0 0;
-  transition: color 0.3s, transform 0.3s; /* Adicionar transição suave para propriedades animáveis */
+  transition: color 0.3s, transform 0.3s;
+  /* Adicionar transição suave para propriedades animáveis */
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
 .faq-container .faq-item h5 {
-  font-size: 16px; /* Garantir o tamanho inicial */
+  font-size: 16px;
+  /* Garantir o tamanho inicial */
   padding-top: 12px;
 }
 
@@ -1459,7 +1538,8 @@ ul {
 
 @media (max-width: 575px) {
   .faq-container .faq-item h3 {
-    font-size: 17px; /* Garantir o tamanho inicial */
+    font-size: 17px;
+    /* Garantir o tamanho inicial */
   }
 }
 
@@ -1470,7 +1550,8 @@ ul {
 }
 
 .faq-container .faq-item h3:hover {
-  color: var(--accent-color); /* Apenas alteração de cor */
+  color: var(--accent-color);
+  /* Apenas alteração de cor */
   /* Não adicionar mudanças no tamanho ou estilo geral aqui */
 }
 
@@ -1481,7 +1562,8 @@ ul {
 }
 
 .faq-container .faq-item.faq-active .faq-content {
-  max-height: 800px; /* Defina um valor alto o suficiente para acomodar o conteúdo */
+  max-height: 800px;
+  /* Defina um valor alto o suficiente para acomodar o conteúdo */
   transition: max-height 0.3s ease-in-out;
 }
 
@@ -1506,7 +1588,8 @@ ul {
 }
 
 .faq-container .faq-active h3 {
-  color: var(--accent-color); /* Somente cor alterada */
+  color: var(--accent-color);
+  /* Somente cor alterada */
   /* Font-size e outros estilos permanecem iguais para consistência */
 }
 
@@ -1526,8 +1609,10 @@ ul {
 # Noncirurgicos Section
 --------------------------------------------------------------*/
 .noncirurgicos {
-  background-color: var(--background-color); /* Usar fundo escuro principal */
-  color: var(--default-color); /* Texto em cinza claro */
+  background-color: var(--background-color);
+  /* Usar fundo escuro principal */
+  color: var(--default-color);
+  /* Texto em cinza claro */
 }
 
 /* Estilo do ícone de seta */
@@ -1538,8 +1623,10 @@ ul {
 }
 
 .noncirurgicos .animated-icon:hover {
-  transform: translateX(8px); /* Seta se move suavemente para a direita ao passar o mouse */
-  animation: bounce 0.6s ease infinite; /* Animação de "bounce" */
+  transform: translateX(8px);
+  /* Seta se move suavemente para a direita ao passar o mouse */
+  animation: bounce 0.6s ease infinite;
+  /* Animação de "bounce" */
 }
 
 /* Animação de bounce */
@@ -1547,15 +1634,19 @@ ul {
   0% {
     transform: translateY(0);
   }
+
   30% {
     transform: translateY(-8px);
   }
+
   50% {
     transform: translateY(0);
   }
+
   70% {
     transform: translateY(-4px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -1563,7 +1654,8 @@ ul {
 
 .nav-link {
   display: flex;
-  flex-direction: column; /* Coloca o texto e o botão em colunas */
+  flex-direction: column;
+  /* Coloca o texto e o botão em colunas */
   align-items: center;
   text-decoration: none;
   color: inherit;
@@ -1572,11 +1664,13 @@ ul {
 
 .noncirurgicos .nav-tabs {
   border: 0;
-  margin-bottom: 15px; /* Pequeno espaçamento entre as abas e o conteúdo */
+  margin-bottom: 15px;
+  /* Pequeno espaçamento entre as abas e o conteúdo */
 }
 
 .noncirurgicos .nav-link {
-  color: var(--default-color); /* Texto claro */
+  color: var(--default-color);
+  /* Texto claro */
   padding: 15px 0;
   transition: 0.3s;
   border-radius: 0;
@@ -1587,28 +1681,33 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 2px solid var(--accent-color); /* Removido borda clara */
+  border-left: 2px solid var(--accent-color);
+  /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link:hover {
-  border-left: 2px solid var(--accent-color); /* Removido borda clara */
+  border-left: 2px solid var(--accent-color);
+  /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link:focus {
-  border-left: 2px solid var(--accent-color); /* Removido borda clara */
+  border-left: 2px solid var(--accent-color);
+  /* Removido borda clara */
 }
 
 .noncirurgicos .nav-link i {
   margin-top: 5px;
   font-size: 18px;
-  color: var(--accent-color); /* Ícones dourados */
+  color: var(--accent-color);
+  /* Ícones dourados */
 }
 
 .noncirurgicos .nav-link h4 {
   font-size: 18px;
   margin-top: 10px;
   padding: 10px;
-  color: var(--default-color); /* Títulos nas abas em texto claro */
+  color: var(--default-color);
+  /* Títulos nas abas em texto claro */
 }
 
 .noncirurgicos .tab-content {
@@ -1616,7 +1715,8 @@ ul {
 }
 
 .noncirurgicos .tab-pane h3 {
-  color: var(--heading-color); /* Títulos de conteúdo em branco sutil */
+  color: var(--heading-color);
+  /* Títulos de conteúdo em branco sutil */
   font-weight: 200;
   font-size: 26px;
   position: relative;
@@ -1630,7 +1730,8 @@ ul {
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--accent-color); /* Linha dourada embaixo dos títulos */
+  background: var(--accent-color);
+  /* Linha dourada embaixo dos títulos */
   left: 0;
   bottom: 0;
 }
@@ -1639,7 +1740,8 @@ ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Permitir que quebrem linha, se necessário */
+  flex-wrap: wrap;
+  /* Permitir que quebrem linha, se necessário */
 }
 
 .noncirurgicos .tab-pane ul li {
@@ -1651,7 +1753,8 @@ ul {
 .noncirurgicos .tab-pane ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color); /* Ícones dourados nas listas */
+  color: var(--accent-color);
+  /* Ícones dourados nas listas */
 }
 
 .noncirurgicos .tab-pane p:last-child {
@@ -1659,8 +1762,10 @@ ul {
 }
 
 .noncirurgicos .modal-content {
-  background-color: color-mix(in srgb, var(--surface-color), transparent 10%); /* Mistura 80% da cor original com 20% de transparência */
-  color: var(--default-color); /* Texto claro dentro do modal */
+  background-color: color-mix(in srgb, var(--surface-color), transparent 10%);
+  /* Mistura 80% da cor original com 20% de transparência */
+  color: var(--default-color);
+  /* Texto claro dentro do modal */
 }
 
 .noncirurgicos .modal-header {
@@ -1669,15 +1774,18 @@ ul {
 }
 
 .noncirurgicos .modal-title {
-  color: var(--contrast-color); /* Títulos do modal em branco puro */
+  color: var(--contrast-color);
+  /* Títulos do modal em branco puro */
 }
 
 .noncirurgicos .btn-close-white {
-  color: var(--contrast-color); /* Ícone de fechar em texto claro */
+  color: var(--contrast-color);
+  /* Ícone de fechar em texto claro */
 }
 
 .noncirurgicos .btn-close-white:hover {
-  color: var(--default-color); /* Ícone de fechar em texto claro */
+  color: var(--default-color);
+  /* Ícone de fechar em texto claro */
 }
 
 .btn-close-white:focus {
@@ -1686,12 +1794,14 @@ ul {
 }
 
 .noncirurgicos .modal-footer {
-  border-top: 1px solid var(--border-color); /* Borda no rodapé do modal */
+  border-top: 1px solid var(--border-color);
+  /* Borda no rodapé do modal */
 }
 
 @media (max-width: 575px) {
   .noncirurgicos .nav-link h4 {
-    font-size: 18px; /* Ajusta o tamanho das fontes nas telas menores */
+    font-size: 18px;
+    /* Ajusta o tamanho das fontes nas telas menores */
   }
 
   .noncirurgicos .tab-pane .noncirurgicos .nav.nav-tabs {
@@ -1853,8 +1963,7 @@ ul {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid
-    color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
