@@ -1785,6 +1785,13 @@ ul {
 
 .noncirurgicos .modal-title {
   color: var(--contrast-color);
+  font-size: 18px;
+  /* Títulos do modal em branco puro */
+}
+
+.noncirurgicos .modal-body h5 {
+  color: var(--contrast-color);
+  font-size: 16px;
   /* Títulos do modal em branco puro */
 }
 
