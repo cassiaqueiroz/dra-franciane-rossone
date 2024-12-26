@@ -601,7 +601,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: rgba(5, 5, 5, 0.4);
+    color: rgba(224, 224, 224, 1);
     position: absolute;
     font-size: 32px;
     top: 15px;
