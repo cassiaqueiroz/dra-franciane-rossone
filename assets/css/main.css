@@ -61,7 +61,9 @@
   /* Texto claro no menu */
   --nav-hover-color: #b89e7a;
   /* Dourado no hover */
-  --nav-mobile-background-color: #e0e0e0;
+  --nav-mobile-background-color: rgba(255,
+  255,
+  255);
   /* Fundo do menu mobile */
   --nav-dropdown-background-color: rgba(224,
       224,
@@ -507,7 +509,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: color-mix(in srgb, var(--nav-mobile-background-color), transparent 20%);
+    background-color: color-mix(in srgb, var(--nav-mobile-background-color), transparent 12%);
     border: 1px solid rgba(224, 224, 224, 0.04);
     /* Borda sutil */
     overflow-y: auto;
@@ -677,7 +679,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-color);
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
   /* Ícones com opacidade */
   line-height: 1;
   margin: 0 6px;
