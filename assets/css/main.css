@@ -35,11 +35,11 @@
 
 :root {
   /* Paleta Global */
-  --background-color: #060606;
+  --background-color: #060606d8;
   /* Fundo escuro principal */
-  --default-color: #ffffff;
+  --default-color: #ffffffc4;
   /* Cinza claro para texto */
-  --heading-color: #2a2a2a;
+  --heading-color: #080808;
   /* Branco sutil para títulos */
   --accent-color: #b89e7a;
   /* Dourado sofisticado */
