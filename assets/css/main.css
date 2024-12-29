@@ -35,36 +35,53 @@
 
 :root {
   /* Paleta Global */
-  --background-color: #ffffff; /* Branco puro para o fundo principal */
-  --default-color: #444444; /* Cinza escuro para o texto */
-  --heading-color: #444444; /* Mesma cor para títulos e subtítulos */
-  --accent-color: #b89e7a; /* Dourado sofisticado */
-  --surface-color: #ffffff; /* Fundo de elementos como cartões e seções */
-  --contrast-color: #ffffff; /* Texto sobre fundos escuros ou dourados */
-  --gray-tone: #b7b8ba; /* Cinza refinado para bordas e áreas neutras */
+  --background-color: #ffffff;
+  /* Branco puro para o fundo principal */
+  --default-color: #444444;
+  /* Cinza escuro para o texto */
+  --heading-color: #444444;
+  /* Mesma cor para títulos e subtítulos */
+  --accent-color: #b89e7a;
+  /* Dourado sofisticado */
+  --surface-color: #ffffff;
+  /* Fundo de elementos como cartões e seções */
+  --contrast-color: #ffffff;
+  /* Texto sobre fundos escuros ou dourados */
+  --gray-tone: #b7b8ba;
+  /* Cinza refinado para bordas e áreas neutras */
 
   /* Botões */
-  --button-background: #b89e7a; /* Fundo dourado para botões */
-  --button-hover-background: #b7b8ba; /* Fundo cinza no hover */
-  --button-text-color: #ffffff; /* Texto branco nos botões */
-  --button-border-color: #b7b8ba; /* Borda cinza para botões refinados */
+  --button-background: #b89e7a;
+  /* Fundo dourado para botões */
+  --button-hover-background: #b7b8ba;
+  /* Fundo cinza no hover */
+  --button-text-color: #ffffff;
+  /* Texto branco nos botões */
+  --button-border-color: #b7b8ba;
+  /* Borda cinza para botões refinados */
 
   /* Bordas */
-  --border-color: #b7b8ba; /* Cor das bordas para inputs e seções */
-  --border-hover-color: #b89e7a; /* Borda dourada ao interagir */
+  --border-color: #b7b8ba;
+  /* Cor das bordas para inputs e seções */
+  --border-hover-color: #b89e7a;
+  /* Borda dourada ao interagir */
 
   /* Navegação */
-  --nav-color: #444444; /* Cor padrão dos links do menu */
-  --nav-hover-color: #b89e7a; /* Dourado ao passar o mouse */
-  --nav-mobile-background-color: #ffffff; /* Fundo do menu em mobile */
-  --nav-dropdown-background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Fundo do dropdown */
-  --nav-dropdown-color: #444444; /* Links dropdown em cinza escuro */
-  --nav-dropdown-hover-color: #b89e7a; /* Dourado nos links ao passar o mouse */
+  --nav-color: #444444;
+  /* Cor padrão dos links do menu */
+  --nav-hover-color: #b89e7a;
+  /* Dourado ao passar o mouse */
+  --nav-mobile-background-color: #ffffff;
+  /* Fundo do menu em mobile */
+  --nav-dropdown-background-color: rgba(255,
+      255,
+      255,
+      0.8);
+  /* Fundo do dropdown */
+  --nav-dropdown-color: #444444;
+  /* Links dropdown em cinza escuro */
+  --nav-dropdown-hover-color: #b89e7a;
+  /* Dourado nos links ao passar o mouse */
 }
 
 /* Botões */
@@ -80,11 +97,9 @@ button {
 }
 
 button:hover {
-  background-color: color-mix(
-    in srgb,
-    var(--button-background),
-    transparent 90%
-  );
+  background-color: color-mix(in srgb,
+      var(--button-background),
+      transparent 90%);
   color: var(--default-color);
   border-color: var(--border-hover-color);
 }
@@ -200,7 +215,8 @@ h6 {
   font-family: "Kiona Regular", sans-serif;
   font-weight: 200;
   color: #e5d4d3;
-  letter-spacing: 10px; /* ou mantenha proporcional como "0.736em" */
+  letter-spacing: 10px;
+  /* ou mantenha proporcional como "0.736em" */
 }
 
 /* Pulsating Play Button
@@ -208,10 +224,8 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(
-    var(--accent-color) 50%,
-    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
-  );
+  background: radial-gradient(var(--accent-color) 50%,
+      color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -373,6 +387,7 @@ h6 {
 }
 
 @media (max-width: 575px) {
+
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
     font-size: 13px;
@@ -397,7 +412,7 @@ h6 {
 }
 
 .header .topbar .social-links a:hover {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header .branding {
@@ -478,7 +493,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -517,11 +532,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -533,7 +548,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -642,7 +657,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -669,7 +684,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -686,7 +701,8 @@ h6 {
 }
 
 .footer h1 {
-  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
+  font-size: 1.7em;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
@@ -696,7 +712,8 @@ h6 {
 }
 
 .footer h3 {
-  font-size: 1em; /* 38px ÷ 16 = 2.375rem */
+  font-size: 1em;
+  /* 38px ÷ 16 = 2.375rem */
   font-weight: 500;
   text-align: center;
   padding: 0;
@@ -720,7 +737,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
@@ -740,8 +757,7 @@ h6 {
 .footer .copyright {
   font-size: 13px;
   padding-top: 25px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 78%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 78%);
 }
 
 .footer .credits {
@@ -807,7 +823,8 @@ h6 {
   color: var(--contrast-color);
   line-height: 0;
   font-weight: 200;
-  transform: scaleX(1.1); /* Aumenta a largura do ícone */
+  transform: scaleX(1.1);
+  /* Aumenta a largura do ícone */
 }
 
 .scroll-top:hover {
@@ -840,8 +857,7 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -863,11 +879,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title nav ol li + li {
+.page-title nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -887,6 +903,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 100px;
@@ -952,7 +969,8 @@ section,
 .hero .doctor-name {
   color: #bbbbbb;
   font-family: "Wild and Folk Regular", sans-serif;
-  letter-spacing: 4px; /* ou use "0.736em" para manter a proporção */
+  letter-spacing: 4px;
+  /* ou use "0.736em" para manter a proporção */
 }
 
 .hero .carousel {
@@ -978,8 +996,10 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra a área do contêiner */
-  object-position: top; /* Alinha a imagem no topo */
+  object-fit: cover;
+  /* Garante que a imagem cubra a área do contêiner */
+  object-position: top;
+  /* Alinha a imagem no topo */
   z-index: 1;
 }
 
@@ -989,8 +1009,10 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra a área do contêiner */
-  object-position: center center; /* Alinha a imagem no topo */
+  object-fit: cover;
+  /* Garante que a imagem cubra a área do contêiner */
+  object-position: center center;
+  /* Alinha a imagem no topo */
   z-index: 1;
 }
 
@@ -998,8 +1020,10 @@ section,
 .hero .carousel-item {
   position: absolute;
   inset: 0;
-  background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  /* Faz a imagem de fundo cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -1010,29 +1034,36 @@ section,
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
-  z-index: 2; /* Garantir que fique acima do fundo */
+  z-index: 2;
+  /* Garantir que fique acima do fundo */
 }
 
 .hero .carousel-container {
   position: absolute;
-  inset: 64px; /* Define espaçamento uniforme */
+  inset: 64px;
+  /* Define espaçamento uniforme */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Move o conteúdo para o final do container */
+  justify-content: flex-end;
+  /* Move o conteúdo para o final do container */
   align-items: center;
   text-align: center;
   z-index: 3;
-  padding-bottom: 50px; /* Ajuste o espaço na parte inferior */
+  padding-bottom: 50px;
+  /* Ajuste o espaço na parte inferior */
 }
+
 .hero .carousel-item h1 {
-  font-size: 1.7em; /* 48px ÷ 16 = 3rem */
+  font-size: 1.7em;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
 }
 
 .hero .carousel-item h2 {
-  font-size: 2rem; /* 48px ÷ 16 = 3rem */
+  font-size: 2rem;
+  /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   animation: fadeInDown 1s both;
   color: #bbb;
@@ -1044,7 +1075,8 @@ section,
 
 @media (max-width: 768px) {
   .hero .carousel-item h2 {
-    font-size: 1.875rem; /* 30px ÷ 16 = 1.875rem */
+    font-size: 1.875rem;
+    /* 30px ÷ 16 = 1.875rem */
   }
 }
 
@@ -1054,13 +1086,15 @@ section,
 }
 
 .hero h3 {
-  font-size: 1em; /* 38px ÷ 16 = 2.375rem */
+  font-size: 1em;
+  /* 38px ÷ 16 = 2.375rem */
   font-weight: 500;
   text-align: center;
   padding: 0;
 }
 
 @media (min-width: 1024px) {
+
   .hero h2,
   .hero h5 {
     max-width: 48%;
@@ -1104,6 +1138,7 @@ section,
 }
 
 @media (min-width: 1024px) {
+
   .hero .carousel-control-prev,
   .hero .carousel-control-next {
     width: 5%;
@@ -1135,7 +1170,8 @@ section,
   opacity: 1;
 }
 
-@media (max-height: 768px), (max-width: 1024px) {
+@media (max-height: 768px),
+(max-width: 1024px) {
   .hero .carousel-indicators li {
     margin-bottom: 20px;
   }
@@ -1149,7 +1185,8 @@ section,
   z-index: 2;
 }
 
-@media (max-height: 768px), (max-width: 1024px) {
+@media (max-height: 768px),
+(max-width: 1024px) {
   .hero .featured {
     margin-top: 0;
   }
@@ -1267,14 +1304,19 @@ section,
 
 /* Destacar a última frase */
 .highlight {
-  color: #2c3e50; /* Azul profundo ou cinza escuro */
+  color: #2c3e50;
+  /* Azul profundo ou cinza escuro */
   font-weight: 200;
   padding: 10px 15px;
-  border-left: 4px solid #b89e7a; /* Barra dourada para um toque sofisticado */
+  border-left: 4px solid #b89e7a;
+  /* Barra dourada para um toque sofisticado */
   margin: 24px 0;
-  border-radius: 4px; /* Bordas arredondadas */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  font-size: 1.1em; /* Aumentar levemente o texto */
+  border-radius: 4px;
+  /* Bordas arredondadas */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
+  font-size: 1.1em;
+  /* Aumentar levemente o texto */
   font-family: var(--heading-font);
 }
 
@@ -1301,7 +1343,8 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  object-position: 50% 20%; /* Centraliza horizontalmente e alinha ao topo */
+  object-position: 50% 20%;
+  /* Centraliza horizontalmente e alinha ao topo */
 }
 
 .consulta h3 {
@@ -1414,6 +1457,60 @@ ul {
 }
 
 /*--------------------------------------------------------------
+# Clinica Section
+--------------------------------------------------------------*/
+.clinica {
+  padding: 80px 0;
+  position: relative;
+  clip-path: inset(0);
+  background-color: rgba(245, 245, 245, 0.8);
+  /* Fundo escuro */
+}
+
+.clinica .container {
+  position: relative;
+  z-index: 3;
+}
+
+.clinica h3 {
+  font-size: 28px;
+  font-weight: 300;
+  /* Ajustado para um peso ligeiramente mais elegante */
+  /* Branco puro */
+  margin-bottom: 20px;
+}
+
+.clinica p {
+  /* Cinza claro para texto */
+  line-height: 1.6;
+  /* Melhor espaçamento para leitura */
+}
+
+.clinica i {
+  font-size: 20px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+}
+
+.clinica .cta-btn {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 5%);
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 20px;
+  animation: fadeInUp 1s both 0.4s;
+}
+
+.clinica .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+/*--------------------------------------------------------------
 # Cirurgias Section
 --------------------------------------------------------------*/
 .cirurgias {
@@ -1421,9 +1518,12 @@ ul {
 }
 
 .cirurgias img {
-  display: block; /* Remove o espaço extra ao redor da imagem */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+  /* Remove o espaço extra ao redor da imagem */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  height: auto;
+  /* Mantém a proporção da imagem */
   object-fit: cover;
 }
 
@@ -1437,8 +1537,7 @@ ul {
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 200;
   font-size: 17px;
   font-family: var(--heading-font);
@@ -1486,20 +1585,178 @@ ul {
   }
 } */
 
+.faq-description {
+  font-size: 1rem;
+  color: var(--default-color);
+  margin-bottom: 2rem;
+}
+
+.faq-arrow {
+  color: var(--accent-color);
+}
+
+.faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-container .faq-item h3 {
+  font-weight: 200;
+  font-size: 18px;
+  /* Garantir o tamanho inicial */
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: color 0.3s, transform 0.3s;
+  /* Adicionar transição suave para propriedades animáveis */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq-container .faq-item h5 {
+  font-size: 16px;
+  /* Garantir o tamanho inicial */
+  padding-top: 12px;
+}
+
+.faq-container .faq-item p {
+  padding-bottom: 12px;
+}
+
+
+.faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+  /* Apenas alteração de cor */
+  /* Não adicionar mudanças no tamanho ou estilo geral aqui */
+}
+
+.faq-container .faq-item .faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-container .faq-item.faq-active .faq-content {
+  max-height: 800px;
+  /* Defina um valor alto o suficiente para acomodar o conteúdo */
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+.faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq-container .faq-active h3 {
+  color: var(--accent-color);
+  /* Somente cor alterada */
+  /* Font-size e outros estilos permanecem iguais para consistência */
+}
+
+.faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Noncirurgicos Section
 --------------------------------------------------------------*/
 .noncirurgicos {
-  --background-color: rgba(68, 68, 68, 0.04);
+  background-color: var(--background-color);
+  /* Usar fundo escuro principal */
+  color: var(--default-color);
+  /* Texto em cinza claro */
 }
+
+/* Estilo do ícone de seta */
+.noncirurgicos .animated-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.noncirurgicos .animated-icon:hover {
+  transform: translateX(8px);
+  /* Seta se move suavemente para a direita ao passar o mouse */
+  animation: bounce 0.6s ease infinite;
+  /* Animação de "bounce" */
+}
+
+/* Animação de bounce */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  /* Coloca o texto e o botão em colunas */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .noncirurgicos .nav-tabs {
   border: 0;
+  margin-bottom: 15px;
+  /* Pequeno espaçamento entre as abas e o conteúdo */
 }
 
 .noncirurgicos .nav-link {
-  color: var(--heading-color);
-  padding: 15px 0;
+  color: var(--default-color);
+  padding: 8px;
   transition: 0.3s;
   border-radius: 0;
   display: flex;
@@ -1508,35 +1765,39 @@ ul {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.noncirurgicos .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-.noncirurgicos .nav-link h4 {
-  font-size: 17px;
-  margin: 0;
-}
-
-@media (max-width: 575px) {
-  .noncirurgicos .nav-link h4 {
-    font-size: 17px;
-  }
+  background: var(--surface-color);
+  border-left: 3px solid var(--accent-color);
+  white-space: nowrap;
+  /* Garante uma única linha */
+  flex-wrap: nowrap;
+  /* Impede quebra de linha */
+  gap: 8px;
+  /* Espaço entre ícone e texto */
 }
 
 .noncirurgicos .nav-link:hover {
-  color: var(--accent-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-left: 2px solid var(--accent-color);
+  /* Removido borda clara */
 }
 
-.noncirurgicos .nav-link.active {
-  background-color: transparent;
+.noncirurgicos .nav-link:focus {
+  border-left: 2px solid var(--accent-color);
+  /* Removido borda clara */
+}
+
+.noncirurgicos .nav-link i {
+  margin-top: 5px;
+  font-size: 18px;
   color: var(--accent-color);
-  border-color: var(--accent-color);
+  /* Ícones dourados */
+}
+
+.noncirurgicos .nav-link h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--default-color);
+  /* Títulos nas abas em texto claro */
 }
 
 .noncirurgicos .tab-content {
@@ -1545,6 +1806,7 @@ ul {
 
 .noncirurgicos .tab-pane h3 {
   color: var(--heading-color);
+  /* Títulos de conteúdo em branco sutil */
   font-weight: 200;
   font-size: 26px;
   position: relative;
@@ -1559,6 +1821,7 @@ ul {
   width: 60px;
   height: 3px;
   background: var(--accent-color);
+  /* Linha dourada embaixo dos títulos */
   left: 0;
   bottom: 0;
 }
@@ -1567,7 +1830,6 @@ ul {
   list-style: none;
   padding: 0;
   display: flex;
-  /* Itens lado a lado no padrão */
   flex-wrap: wrap;
   /* Permitir que quebrem linha, se necessário */
 }
@@ -1582,31 +1844,70 @@ ul {
   font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
+  /* Ícones dourados nas listas */
 }
 
 .noncirurgicos .tab-pane p:last-child {
   margin-bottom: 0;
 }
 
+.noncirurgicos .modal-content {
+  background-color: color-mix(in srgb, var(--surface-color), transparent 10%);
+  /* Mistura 80% da cor original com 20% de transparência */
+  color: var(--default-color);
+  /* Texto claro dentro do modal */
+}
+
+.noncirurgicos .modal-header {
+  border-bottom: 1px solid color-mix(in srgb, var(--border-color), transparent 50%);
+  margin: 0 15px;
+  color: var(--default-color);
+}
+
+.noncirurgicos .modal-title {
+  font-size: 18px;
+  /* Títulos do modal em branco puro */
+}
+
+.noncirurgicos .modal-body h5 {
+  font-size: 16px;
+  /* Títulos do modal em branco puro */
+}
+
+.btn-close-accent {
+  color: var(--accent-color);
+  /* Ícone de fechar em texto claro */
+}
+
+.btn-close-accent:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.noncirurgicos .modal-footer {
+  border-top: 1px solid var(--border-color);
+  /* Borda no rodapé do modal */
+}
+
 @media (max-width: 575px) {
+  .noncirurgicos .nav-link h4 {
+    font-size: 18px;
+    /* Ajusta o tamanho das fontes nas telas menores */
+  }
+
   .noncirurgicos .tab-pane .noncirurgicos .nav.nav-tabs {
     display: flex;
     flex-direction: column;
-    /* Empilhar os itens */
     align-items: stretch;
-    /* Expandir os itens para ocupar toda a largura */
   }
 
   .noncirurgicos .tab-pane .noncirurgicos .nav-item {
     margin-bottom: 10px;
-    /* Espaçamento entre os itens */
     width: 100%;
-    /* Certifica-se de que os itens ocupem toda a largura */
   }
 
   .noncirurgicos .tab-pane .noncirurgicos .nav-link {
     justify-content: center;
-    /* Centralizar o conteúdo dentro do botão */
   }
 
   .noncirurgicos .tab-pane img {
@@ -1616,6 +1917,7 @@ ul {
     object-position: top;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Endereco Section
@@ -1752,8 +2054,7 @@ ul {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid
-    color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
