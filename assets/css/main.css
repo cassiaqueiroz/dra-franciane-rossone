@@ -614,7 +614,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--gray-tone);
+    color: var(--default-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -1472,11 +1472,11 @@ ul {
 .clinica h3 {
   font-size: 28px;
   font-weight: 200;
-  color: white;
+  color: var(--default-color);
 }
 
 .clinica p {
-  color: white;
+  color: var(--default-color);
 }
 
 .clinica .cta-btn {
@@ -1494,7 +1494,7 @@ ul {
 }
 
 .clinica .cta-btn:hover {
-  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%);
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 50%);
   border: 2px solid var(--constrast-color);
 }
 
@@ -1807,7 +1807,7 @@ ul {
   cursor: pointer;
   height: 100%;
   border: 0;
-  background: var(--surface-color);
+  background-color: rgba(245, 245, 245, 0.8);
   border-left: 3px solid var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
