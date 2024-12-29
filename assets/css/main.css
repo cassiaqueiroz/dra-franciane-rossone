@@ -43,7 +43,7 @@
   /* Branco sutil para títulos */
   --accent-color: #b89e7a;
   /* Dourado sofisticado */
-  --surface-color: #f5f5f5e8;
+  --surface-color: #e0e0e0e8;
   /* Fundo dos cartões e elementos destacados */
   --contrast-color: #ffffff;
   /* Branco puro para texto em fundos escuros */
@@ -1690,7 +1690,7 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 3px solid var(--accent-color);
+  border-left: 6px solid var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
@@ -1712,7 +1712,7 @@ ul {
 .noncirurgicos .nav-link i {
   margin-top: 5px;
   font-size: 18px;
-  color: var(--accent-color);
+  color: var(--heading-color);
   /* Ícones dourados */
 }
 
@@ -1799,6 +1799,10 @@ ul {
 }
 
 .noncirurgicos .modal-body p {
+  color: var(--heading-color);
+}
+
+.noncirurgicos .modal-body ul {
   color: var(--heading-color);
 }
 
@@ -1961,7 +1965,8 @@ ul {
   margin: 10px 0;
 }
 
-.contatos .info-item p {
+.contatos .info-item p,
+.contatos .info-item a {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
