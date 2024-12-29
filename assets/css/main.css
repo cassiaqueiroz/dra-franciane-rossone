@@ -361,58 +361,28 @@ h6 {
   background-color: var(--background-color);
 }
 
-.header .topbar {
-  background-color: #b7b8ba;
-  height: 40px;
-  padding: 0;
-  font-size: 14px;
-  font-weight: 200;
-  transition: all 0.5s;
-}
-
-.header .topbar .contact-info i,
-.header .topbar .contact-info a {
-  font-style: normal;
-  color: white;
-  border-bottom: 1px solid transparent;
-}
-
-.header .topbar .contact-info a:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.header .topbar .contact-info i a,
-.header .topbar .contact-info i span {
-  padding-left: 5px;
-}
-
-@media (max-width: 575px) {
-
-  .header .topbar .contact-info i a,
-  .header .topbar .contact-info i span {
-    font-size: 13px;
+@media (max-width: 1199px) {
+  .beside-toggle-btn {
+    margin-right: 3.5rem;
+    color: var(--contrast-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 5%);
+    font-family: var(--heading-font);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 40px;
+    transition: 0.5s;
+    animation: fadeInUp 1s both 0.4s;
+    white-space: nowrap;
   }
-}
 
-.header .topbar .contact-info i a {
-  line-height: 0;
-  transition: 0.3s;
-}
+  .beside-toggle-btn:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 50%);
 
-.header .topbar .contact-info i a:hover {
-  color: var(--contrast-color);
-  text-decoration: underline;
-}
+  }
 
-.header .topbar .social-links a {
-  color: white;
-  line-height: 0;
-  transition: 0.3s;
-  margin-left: 20px;
-}
-
-.header .topbar .social-links a:hover {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .header .branding {
