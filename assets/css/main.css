@@ -37,13 +37,13 @@
   /* Paleta Global */
   --background-color: #060606d8;
   /* Fundo escuro principal */
-  --default-color: #e6e6e6c4;
+  --default-color: #e6e6e6;
   /* Cinza claro para texto */
   --heading-color: #080808;
   /* Branco sutil para títulos */
   --accent-color: #b89e7a;
   /* Dourado sofisticado */
-  --surface-color: #f5f5f5;
+  --surface-color: #f5f5f5e8;
   /* Fundo dos cartões e elementos destacados */
   --contrast-color: #ffffff;
   /* Branco puro para texto em fundos escuros */
@@ -894,7 +894,7 @@ section,
 .section-title span {
   position: absolute;
   top: 12px;
-  color: color-mix(in srgb, var(--heading-color), transparent 8%);
+  color: color-mix(in srgb, var(--accent-color), transparent 85%);
   left: 0;
   right: 0;
   z-index: 1;
@@ -1386,7 +1386,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background: rgba(245, 245, 245, 1);
+  background: var(--surface-color);
   /* Fundo escuro */
 }
 
