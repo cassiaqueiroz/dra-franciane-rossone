@@ -357,8 +357,80 @@ h6 {
 .header {
   color: var(--default-color);
   transition: all 0.5s;
-  z-index: 997;
+  position: sticky;
+  z-index: 1000;
   background-color: var(--background-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  /* Sombra para transição */
+}
+
+.header .branding {
+  min-height: 60px;
+  display: : flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+@media (max-width: 1199px) {
+  .header .branding {
+    display: block;
+    /* Evita que o flexbox cause sobreposição em telas menores */
+  }
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 200;
+  color: var(--heading-color);
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.6);
+}
+
+.scrolled .header .topbar {
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/**
+* Appointment Button
+*/
+.appointment-btn {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 5%);
+  font-family: var(--heading-font);
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 6px 24px;
+  border-radius: 40px;
+  transition: 0.5s;
+  animation: fadeInUp 1s both 0.4s;
+  white-space: nowrap;
+}
+
+.appointment-btn:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-btn i {
+  font-size: 18px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
 @media (max-width: 1199px) {
@@ -383,37 +455,6 @@ h6 {
 
   }
 
-}
-
-.header .branding {
-  min-height: 60px;
-  padding: 10px 0;
-}
-
-.header .logo {
-  line-height: 1;
-}
-
-.header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 200;
-  color: var(--heading-color);
-}
-
-.scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-}
-
-.scrolled .header .topbar {
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -474,6 +515,8 @@ h6 {
     padding: 10px 0;
     background: var(--nav-dropdown-background-color);
     display: block;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    /* Borda sutil */
     position: absolute;
     visibility: hidden;
     left: 14px;
@@ -482,7 +525,7 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
   }
 
   .navmenu .dropdown ul li {
@@ -493,7 +536,6 @@ h6 {
     padding: 10px 20px;
     font-size: 16px;
     text-transform: none;
-    color: var(--nav-dropdown-color);
   }
 
   .navmenu .dropdown ul a i {
@@ -529,12 +571,19 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--default-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
+    position: absolute;
+    /* Colocando o toggle em posição absoluta */
+    top: 5px;
+    /* Distância do topo */
+    right: 15px;
+    /* Distância da direita */
     cursor: pointer;
     transition: color 0.3s;
+    z-index: 9999;
+    /* Garantindo que o botão fique sobre outros elementos */
   }
 
   .navmenu {
@@ -549,11 +598,14 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: var(--nav-mobile-background-color);
+    background-color: color-mix(in srgb, var(--nav-mobile-background-color), transparent 12%);
+    border: 1px solid rgba(224, 224, 224, 0.04);
+    /* Borda sutil */
     overflow-y: auto;
     transition: 0.3s;
+    border-radius: 4px;
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
   }
 
   .navmenu li {
@@ -562,10 +614,10 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--gray-tone);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     border-radius: 0px;
     display: flex;
@@ -618,18 +670,19 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: rgba (255, 255, 255, 0.9);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: rgba(224, 224, 224, 1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease-in-out;
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background-color: rgba(224, 224, 224, 0.1);
   }
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: rgba(224, 224, 224, 0.03);
   }
 
   .mobile-nav-active {
@@ -637,11 +690,12 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: rgba(224, 224, 224, 1);
     position: absolute;
     font-size: 32px;
     top: 15px;
     right: 15px;
+    /* Certificando que fica no canto direito */
     margin-right: 0;
     z-index: 9999;
   }
@@ -659,36 +713,43 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: #b7b8ba;
+  color: var(--contrast-color);
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding: 40px 0;
   position: relative;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra para transição */
 }
 
 .footer h1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   /* 48px ÷ 16 = 3rem */
   font-weight: 200;
   margin-bottom: 0.5rem;
   animation: fadeInDown 1s both;
   font-family: "Wild and Folk Regular", sans-serif;
   letter-spacing: 4px;
+  color: #afafaf;
+}
+
+.footer .subtitulo {
+  color: #9c9c9c;
 
 }
 
 .footer h3 {
-  font-size: 1em;
+  font-size: 0.8em;
   /* 38px ÷ 16 = 2.375rem */
   font-weight: 500;
   text-align: center;
   padding: 0;
   margin-bottom: 1.5rem;
-  color: white;
 }
 
 .footer p {
@@ -707,34 +768,45 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  /* Ícones com opacidade */
   line-height: 1;
   margin: 0 6px;
   border-radius: 40px;
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   text-decoration: none;
-  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
+  background-color: transparent;
+  border: 1px dotted var(--accent-color);
+  /* Borda clara */
 }
 
 .footer .social-links a:hover {
-  text-decoration: none;
-  border: none;
+  color: var(--accent-color);
+  /* Dourado no hover */
+  border-color: rgba(255, 255, 255, 0.1);
+  /* Destaque no hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent-color);
 }
 
 .footer .copyright {
   font-size: 13px;
   padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 78%);
+  border-top: 1px solid rgba(5, 5, 5, 0.09);
+  /* Linha sutil */
+  color: rgba(5, 5, 5, 0.6);
+  /* Texto claro */
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
+  color: rgba(5, 5, 5, 0.6);
+  /* Texto com opacidade */
 }
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
