@@ -62,8 +62,8 @@
   --nav-hover-color: #b89e7a;
   /* Dourado no hover */
   --nav-mobile-background-color: rgba(255,
-  255,
-  255);
+      255,
+      255);
   /* Fundo do menu mobile */
   --nav-dropdown-background-color: rgba(224,
       224,
@@ -354,7 +354,7 @@ h6 {
   .beside-toggle-btn {
     margin-right: 3.5rem;
     color: var(--contrast-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 40%);
+    background: color-mix(in srgb, var(--accent-color), transparent 5%);
     font-family: var(--heading-font);
     font-weight: 300;
     font-size: 15px;
@@ -366,6 +366,12 @@ h6 {
     animation: fadeInUp 1s both 0.4s;
     white-space: nowrap;
   }
+
+  .beside-toggle-btn:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 50%);
+
+  }
+
 }
 
 /*--------------------------------------------------------------
