@@ -35,9 +35,9 @@
 
 :root {
   /* Paleta Global */
-  --background-color: #e0e0e0;
+  --background-color: #060606;
   /* Fundo escuro principal */
-  --default-color: #1a1a1a;
+  --default-color: #ffffff;
   /* Cinza claro para texto */
   --heading-color: #2a2a2a;
   /* Branco sutil para títulos */
@@ -57,7 +57,7 @@
   /* Dourado ao interagir */
 
   /* Navegação */
-  --nav-color: #555555;
+  --nav-color: #fff;
   /* Texto claro no menu */
   --nav-hover-color: #b89e7a;
   /* Dourado no hover */
@@ -515,7 +515,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    background-color: color-mix(in srgb, var(--nav-mobile-background-color), transparent 12%);
+    background-color: color-mix(in srgb, var(--nav-mobile-background-color), transparent 8%);
     border: 1px solid rgba(224, 224, 224, 0.04);
     /* Borda sutil */
     overflow-y: auto;
@@ -887,12 +887,13 @@ section,
   padding-bottom: 0;
   position: relative;
   z-index: 2;
+  color: var(--default-color);
 }
 
 .section-title span {
   position: absolute;
   top: 12px;
-  color: color-mix(in srgb, var(--heading-color), transparent 88%);
+  color: color-mix(in srgb, var(--heading-color), transparent 8%);
   left: 0;
   right: 0;
   z-index: 1;
@@ -1317,6 +1318,7 @@ ul {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: var(--default-color);
 }
 
 .consulta h3:after {
@@ -1383,7 +1385,7 @@ ul {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
-  background-color: rgba(245, 245, 245, 0.8);
+  background: rgba(245, 245, 245, 1);
   /* Fundo escuro */
 }
 
@@ -1403,6 +1405,7 @@ ul {
 .clinica p {
   /* Cinza claro para texto */
   line-height: 1.6;
+  color: rgba(22, 22, 22, 0.8);
   /* Melhor espaçamento para leitura */
 }
 
@@ -1512,7 +1515,7 @@ ul {
 }
 
 .faq-arrow {
-  color: var(--accent-color);
+  color: var(--heading-color);
 }
 
 .faq-container .faq-item {
@@ -1552,7 +1555,7 @@ ul {
 
 
 .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: var(--heading-color);
   padding-right: 5px;
 }
 
@@ -1578,10 +1581,12 @@ ul {
 .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
+  color: var(--heading-color);
 }
 
 .faq-container .faq-item .faq-toggle {
   position: absolute;
+  color: var(--heading-color);
   top: 20px;
   right: 20px;
   font-size: 16px;
@@ -1595,7 +1600,7 @@ ul {
 }
 
 .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: var(--heading-color);
   /* Somente cor alterada */
   /* Font-size e outros estilos permanecem iguais para consistência */
 }
@@ -1605,11 +1610,12 @@ ul {
   visibility: visible;
   opacity: 1;
   padding-top: 10px;
+  color: var(--heading-color);
 }
 
 .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: var(--heading-color);
 }
 
 /*--------------------------------------------------------------
@@ -1716,7 +1722,7 @@ ul {
   font-size: 18px;
   margin-top: 10px;
   padding: 10px;
-  color: var(--default-color);
+  color: var(--heading-color);
   /* Títulos nas abas em texto claro */
 }
 
@@ -1772,7 +1778,7 @@ ul {
 }
 
 .noncirurgicos .modal-content {
-  background-color: color-mix(in srgb, var(--surface-color), transparent 10%);
+  background-color: color-mix(in srgb, var(--surface-color), transparent 5%);
   /* Mistura 80% da cor original com 20% de transparência */
   color: var(--default-color);
   /* Texto claro dentro do modal */
@@ -1792,6 +1798,10 @@ ul {
 .noncirurgicos .modal-body h5 {
   font-size: 16px;
   /* Títulos do modal em branco puro */
+}
+
+.noncirurgicos .modal-body p {
+  color: var(--heading-color);
 }
 
 .btn-close-accent {
@@ -1947,7 +1957,7 @@ ul {
 }
 
 .contatos .info-item h3 {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--heading-color), transparent 0%);
   font-size: 18px;
   font-weight: 200;
   margin: 10px 0;
@@ -1957,7 +1967,7 @@ ul {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: var(--default-color);
+  color: var(--heading-color);
 }
 
 /*--------------------------------------------------------------
