@@ -70,7 +70,6 @@
       224,
       0.92);
   /* Fundo semitransparente para dropdown */
-  --nav-dropdown-color: #e0e0e0;
   /* Texto claro no dropdown */
   --nav-dropdown-hover-color: #b89e7a;
   /* Dourado no hover */
@@ -430,7 +429,7 @@ h6 {
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background-color: color-mix(in srgb, var(--background-color), transparent 20%);
     display: block;
     border: 1px solid rgba(255, 255, 255, 0.04);
     /* Borda sutil */
@@ -1625,7 +1624,6 @@ ul {
 .noncirurgicos {
   background-color: var(--background-color);
   /* Usar fundo escuro principal */
-  color: var(--default-color);
   /* Texto em cinza claro */
 }
 
@@ -1682,7 +1680,6 @@ ul {
 }
 
 .noncirurgicos .nav-link {
-  color: var(--default-color);
   padding: 8px;
   transition: 0.3s;
   border-radius: 0;
