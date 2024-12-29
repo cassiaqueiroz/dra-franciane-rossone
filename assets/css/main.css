@@ -1519,7 +1519,6 @@ ul {
 }
 
 .faq-container .faq-item {
-  background-color: var(--surface-color);
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
@@ -1541,21 +1540,27 @@ ul {
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: var(--contrast-color);
 }
 
 .faq-container .faq-item h5 {
   font-size: 16px;
   /* Garantir o tamanho inicial */
   padding-top: 12px;
+  color: var(--contrast-color);
+
 }
 
-.faq-container .faq-item p {
+.faq-container .faq-item p,
+.faq-container .faq-item ul {
   padding-bottom: 12px;
+  color: var(--contrast-color);
+
 }
 
 
 .faq-container .faq-item h3 .num {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   padding-right: 5px;
 }
 
@@ -1581,12 +1586,12 @@ ul {
 .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
-  color: var(--heading-color);
+  color: var(--contrast-color);
 }
 
 .faq-container .faq-item .faq-toggle {
   position: absolute;
-  color: var(--heading-color);
+  color: var(--contrast-color);
   top: 20px;
   right: 20px;
   font-size: 16px;
@@ -1600,7 +1605,7 @@ ul {
 }
 
 .faq-container .faq-active h3 {
-  color: var(--heading-color);
+  color: var(--accent-color);
   /* Somente cor alterada */
   /* Font-size e outros estilos permanecem iguais para consistência */
 }
@@ -1615,7 +1620,7 @@ ul {
 
 .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--heading-color);
+  color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
@@ -1690,7 +1695,7 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 6px solid var(--accent-color);
+  border-left: 5px solid var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
