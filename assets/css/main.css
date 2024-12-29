@@ -985,7 +985,7 @@ section,
 /* Remover o uso duplicado de ::before */
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1512,7 +1512,6 @@ ul {
 }
 
 .faq-container .faq-item {
-  background-color: var(--surface-color);
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
