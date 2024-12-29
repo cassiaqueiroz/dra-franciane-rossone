@@ -1145,7 +1145,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 40%);
+  background: color-mix(in srgb, var(--accent-color), transparent 5%);
   font-family: var(--heading-font);
   font-weight: 300;
   font-size: 16px;
@@ -1159,7 +1159,7 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .hero .carousel-control-prev,
