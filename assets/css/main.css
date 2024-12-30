@@ -1278,7 +1278,7 @@ section,
   margin: 24px 0;
   border-radius: 4px;
   /* Bordas arredondadas */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
   /* Sombra leve */
   font-size: 1.1em;
   /* Aumentar levemente o texto */
@@ -1696,7 +1696,7 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 6px double var(--accent-color);
+  border-left: 5px double var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
