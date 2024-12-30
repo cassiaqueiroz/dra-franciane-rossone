@@ -1639,11 +1639,11 @@ ul {
 }
 
 .faq-container .faq-item {
-  background-color: var(--surface-color);
   position: relative;
-  padding: 20px;
+  padding: 20px 25px;
   margin-bottom: 15px;
   overflow: hidden;
+  background-color: #5555550a;
 }
 
 .faq-container .faq-item:last-child {
@@ -1809,7 +1809,7 @@ ul {
   height: 100%;
   border: 0;
   background-color: rgba(245, 245, 245, 0.8);
-  border-left: 3px solid var(--accent-color);
+  border-left: 4px double var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
