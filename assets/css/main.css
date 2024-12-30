@@ -1520,9 +1520,10 @@ ul {
 
 .faq-container .faq-item {
   position: relative;
-  padding: 20px;
+  padding: 20px 25px;
   margin-bottom: 15px;
   overflow: hidden;
+  background-color: #5555550e;
 }
 
 .faq-container .faq-item:last-child {
@@ -1695,7 +1696,7 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 5px solid var(--accent-color);
+  border-left: 6px double var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
