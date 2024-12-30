@@ -1696,7 +1696,7 @@ ul {
   height: 100%;
   border: 0;
   background: var(--surface-color);
-  border-left: 5px double var(--accent-color);
+  border-left: 4px double var(--accent-color);
   white-space: nowrap;
   /* Garante uma única linha */
   flex-wrap: nowrap;
