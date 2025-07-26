@@ -206,6 +206,14 @@ h6 {
   font-weight: 200;
 }
 
+/* Explicit font-size for h1 in semantic containers to avoid deprecated API warning */
+section h1,
+article h1,
+nav h1,
+aside h1 {
+  font-size: 2.5rem;
+}
+
 .subtitulo {
   font-family: "Kiona Regular", sans-serif;
   font-weight: 200;
